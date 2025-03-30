@@ -3,7 +3,7 @@ package serviceassets
 import (
 	"strings"
 
-	"github.com/rackspace/gophercloud"
+	"github.com/ttsubo2000/gophercloud"
 )
 
 // DeleteOptsBuilder allows extensions to add additional parameters to the Delete
@@ -32,7 +32,7 @@ func (opts DeleteOpts) ToCDNAssetDeleteParams() (string, error) {
 
 // Delete accepts a unique service ID or URL and deletes the CDN service asset associated with
 // it. For example, both "96737ae3-cfc1-4c72-be88-5d0e7cc9a3f0" and
-// "https://global.cdn.api.rackspacecloud.com/v1.0/services/96737ae3-cfc1-4c72-be88-5d0e7cc9a3f0"
+// "https://global.cdn.api.ttsubo2000cloud.com/v1.0/services/96737ae3-cfc1-4c72-be88-5d0e7cc9a3f0"
 // are valid options for idOrURL.
 func Delete(c *gophercloud.ServiceClient, idOrURL string, opts DeleteOptsBuilder) DeleteResult {
 	var url string

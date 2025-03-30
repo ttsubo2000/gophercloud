@@ -5,9 +5,9 @@ package v2
 import (
 	"testing"
 
-	tenants2 "github.com/rackspace/gophercloud/openstack/identity/v2/tenants"
-	"github.com/rackspace/gophercloud/pagination"
-	th "github.com/rackspace/gophercloud/testhelper"
+	tenants2 "github.com/ttsubo2000/gophercloud/openstack/identity/v2/tenants"
+	"github.com/ttsubo2000/gophercloud/pagination"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
 )
 
 func TestEnumerateTenants(t *testing.T) {

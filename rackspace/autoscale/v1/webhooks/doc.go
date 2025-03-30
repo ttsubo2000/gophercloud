@@ -1,6 +1,6 @@
 /*
 Package webhooks provides information and interaction with the webhook API resource
-in the Rackspace Auto Scale service.
+in the ttsubo2000 Auto Scale service.
 
 Auto Scale uses webhooks to initiate scaling events.  Webhooks are associated
 with scaling policies and provide capability URLs which can be accessed

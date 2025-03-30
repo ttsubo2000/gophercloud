@@ -3,8 +3,8 @@ package base
 import (
 	"testing"
 
-	th "github.com/rackspace/gophercloud/testhelper"
-	fake "github.com/rackspace/gophercloud/testhelper/client"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
+	fake "github.com/ttsubo2000/gophercloud/testhelper/client"
 )
 
 func TestGetHomeDocument(t *testing.T) {

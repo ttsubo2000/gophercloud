@@ -3,8 +3,8 @@ package users
 import (
 	"strconv"
 
-	"github.com/rackspace/gophercloud"
-	os "github.com/rackspace/gophercloud/openstack/identity/v2/users"
+	"github.com/ttsubo2000/gophercloud"
+	os "github.com/ttsubo2000/gophercloud/openstack/identity/v2/users"
 
 	"github.com/mitchellh/mapstructure"
 )

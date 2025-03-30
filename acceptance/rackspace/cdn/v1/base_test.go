@@ -5,9 +5,9 @@ package v1
 import (
 	"testing"
 
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/rackspace/cdn/v1/base"
-	th "github.com/rackspace/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/cdn/v1/base"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
 )
 
 func TestBaseOps(t *testing.T) {

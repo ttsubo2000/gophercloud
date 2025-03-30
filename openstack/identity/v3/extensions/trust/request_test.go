@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/openstack/identity/v3/tokens"
-	"github.com/rackspace/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/openstack/identity/v3/tokens"
+	"github.com/ttsubo2000/gophercloud/testhelper"
 )
 
 // authTokenPost verifies that providing certain AuthOptions and Scope results in an expected JSON structure.

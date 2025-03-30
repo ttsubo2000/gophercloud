@@ -7,10 +7,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/acceptance/tools"
-	"github.com/rackspace/gophercloud/openstack"
-	"github.com/rackspace/gophercloud/openstack/compute/v2/servers"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/acceptance/tools"
+	"github.com/ttsubo2000/gophercloud/openstack"
+	"github.com/ttsubo2000/gophercloud/openstack/compute/v2/servers"
 )
 
 func newClient() (*gophercloud.ServiceClient, error) {

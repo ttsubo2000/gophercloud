@@ -4,7 +4,7 @@ import (
 	"strings"
 	"net/url"
 
-	"github.com/rackspace/gophercloud"
+	"github.com/ttsubo2000/gophercloud"
 )
 
 func getURL(c *gophercloud.ServiceClient, version string) string {

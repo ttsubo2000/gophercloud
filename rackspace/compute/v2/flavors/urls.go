@@ -1,7 +1,7 @@
 package flavors
 
 import (
-	"github.com/rackspace/gophercloud"
+	"github.com/ttsubo2000/gophercloud"
 )
 
 func getURL(client *gophercloud.ServiceClient, id string) string {

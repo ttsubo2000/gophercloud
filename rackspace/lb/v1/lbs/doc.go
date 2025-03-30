@@ -1,6 +1,6 @@
 /*
 Package lbs provides information and interaction with the Load Balancer API
-resource for the Rackspace Cloud Load Balancer service.
+resource for the ttsubo2000 Cloud Load Balancer service.
 
 A load balancer is a logical device which belongs to a cloud account. It is
 used to distribute workloads between multiple back-end systems or services,

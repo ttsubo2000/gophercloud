@@ -6,12 +6,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rackspace/gophercloud"
-	base "github.com/rackspace/gophercloud/acceptance/openstack/networking/v2"
-	"github.com/rackspace/gophercloud/openstack/networking/v2/extensions/fwaas/firewalls"
-	"github.com/rackspace/gophercloud/openstack/networking/v2/extensions/fwaas/policies"
-	"github.com/rackspace/gophercloud/pagination"
-	th "github.com/rackspace/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud"
+	base "github.com/ttsubo2000/gophercloud/acceptance/openstack/networking/v2"
+	"github.com/ttsubo2000/gophercloud/openstack/networking/v2/extensions/fwaas/firewalls"
+	"github.com/ttsubo2000/gophercloud/openstack/networking/v2/extensions/fwaas/policies"
+	"github.com/ttsubo2000/gophercloud/pagination"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
 )
 
 func firewallSetup(t *testing.T) string {

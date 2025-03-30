@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	th "github.com/rackspace/gophercloud/testhelper"
-	"github.com/rackspace/gophercloud/testhelper/client"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud/testhelper/client"
 )
 
 // MeterListBody contains the canned body of a meters.List response.

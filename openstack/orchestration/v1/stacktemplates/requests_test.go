@@ -3,8 +3,8 @@ package stacktemplates
 import (
 	"testing"
 
-	th "github.com/rackspace/gophercloud/testhelper"
-	fake "github.com/rackspace/gophercloud/testhelper/client"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
+	fake "github.com/ttsubo2000/gophercloud/testhelper/client"
 )
 
 func TestGetTemplate(t *testing.T) {

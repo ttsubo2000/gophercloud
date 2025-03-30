@@ -2,9 +2,9 @@ package pools
 
 import (
 	"github.com/mitchellh/mapstructure"
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/openstack/networking/v2/extensions/lbaas_v2/monitors"
-	"github.com/rackspace/gophercloud/pagination"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/openstack/networking/v2/extensions/lbaas_v2/monitors"
+	"github.com/ttsubo2000/gophercloud/pagination"
 )
 
 // SessionPersistence represents the session persistence feature of the load

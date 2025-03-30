@@ -1,14 +1,14 @@
-// +build acceptance rackspace objectstorage v1
+// +build acceptance ttsubo2000 objectstorage v1
 
 package v1
 
 import (
 	"testing"
 
-	osContainers "github.com/rackspace/gophercloud/openstack/objectstorage/v1/containers"
-	"github.com/rackspace/gophercloud/pagination"
-	raxContainers "github.com/rackspace/gophercloud/rackspace/objectstorage/v1/containers"
-	th "github.com/rackspace/gophercloud/testhelper"
+	osContainers "github.com/ttsubo2000/gophercloud/openstack/objectstorage/v1/containers"
+	"github.com/ttsubo2000/gophercloud/pagination"
+	raxContainers "github.com/ttsubo2000/gophercloud/ttsubo2000/objectstorage/v1/containers"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
 )
 
 func TestContainers(t *testing.T) {

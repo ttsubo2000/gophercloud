@@ -1,9 +1,9 @@
 package snapshots
 
 import (
-	"github.com/rackspace/gophercloud"
-	os "github.com/rackspace/gophercloud/openstack/blockstorage/v1/snapshots"
-	"github.com/rackspace/gophercloud/pagination"
+	"github.com/ttsubo2000/gophercloud"
+	os "github.com/ttsubo2000/gophercloud/openstack/blockstorage/v1/snapshots"
+	"github.com/ttsubo2000/gophercloud/pagination"
 
 	"github.com/mitchellh/mapstructure"
 )
@@ -20,7 +20,7 @@ const (
 	DeleteError Status = "ERROR_DELETING"
 )
 
-// Snapshot is the Rackspace representation of an external block storage device.
+// Snapshot is the ttsubo2000 representation of an external block storage device.
 type Snapshot struct {
 	// The timestamp when this snapshot was created.
 	CreatedAt string `mapstructure:"created_at"`

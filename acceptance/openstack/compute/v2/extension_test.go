@@ -5,9 +5,9 @@ package v2
 import (
 	"testing"
 
-	"github.com/rackspace/gophercloud/openstack/compute/v2/extensions"
-	"github.com/rackspace/gophercloud/pagination"
-	th "github.com/rackspace/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud/openstack/compute/v2/extensions"
+	"github.com/ttsubo2000/gophercloud/pagination"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
 )
 
 func TestListExtensions(t *testing.T) {

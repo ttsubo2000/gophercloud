@@ -1,5 +1,5 @@
 // Package configurations provides information and interaction with the
-// configuration API resource in the Rackspace Database service.
+// configuration API resource in the ttsubo2000 Database service.
 //
 // A configuration group is a collection of key/value pairs which define how a
 // particular database operates. These key/value pairs are specific to each

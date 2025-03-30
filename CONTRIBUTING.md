@@ -17,10 +17,10 @@ get dependencies for unit and acceptance tests.
 2. Move into the directory that houses your local repository:
 
    ```bash
-   cd ${GOPATH}/src/github.com/rackspace/gophercloud
+   cd ${GOPATH}/src/github.com/ttsubo2000/gophercloud
    ```
 
-3. Fork the `rackspace/gophercloud` repository and update your remote refs. You
+3. Fork the `ttsubo2000/gophercloud` repository and update your remote refs. You
 will need to rename the `origin` remote branch to `upstream`, and add your
 fork as `origin` instead:
 
@@ -69,7 +69,7 @@ process of testing expectations with assertions:
 import (
   "testing"
 
-  "github.com/rackspace/gophercloud/testhelper"
+  "github.com/ttsubo2000/gophercloud/testhelper"
 )
 
 func TestSomething(t *testing.T) {
@@ -95,8 +95,8 @@ Here is a truncated example of mocked HTTP responses:
 import (
 	"testing"
 
-	th "github.com/rackspace/gophercloud/testhelper"
-	fake "github.com/rackspace/gophercloud/testhelper/client"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
+	fake "github.com/ttsubo2000/gophercloud/testhelper/client"
 )
 
 func TestGet(t *testing.T) {
@@ -195,7 +195,7 @@ each is described briefly below. Once you've made up your mind and decided on
 your fix, you will need to follow the same basic steps that all submissions are
 required to adhere to:
 
-1. [fork](https://help.github.com/articles/fork-a-repo/) the `rackspace/gophercloud` repository
+1. [fork](https://help.github.com/articles/fork-a-repo/) the `ttsubo2000/gophercloud` repository
 2. checkout a [new branch](https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches)
 3. submit your branch as a [pull request](https://help.github.com/articles/creating-a-pull-request/)
 
@@ -205,8 +205,8 @@ On of the easiest ways to get readily involved in our project is to let us know
 about your experiences using our SDK. Feedback like this is incredibly useful
 to us, because it allows us to refine and change features based on what our
 users want and expect of us. There are a bunch of ways to get in contact! You
-can [ping us](https://developer.rackspace.com/support/) via e-mail, talk to us on irc
-(#rackspace-dev on freenode), [tweet us](https://twitter.com/rackspace), or
+can [ping us](https://developer.ttsubo2000.com/support/) via e-mail, talk to us on irc
+(#ttsubo2000-dev on freenode), [tweet us](https://twitter.com/ttsubo2000), or
 submit an issue on our [bug tracker](/issues). Things you might like to tell us
 are:
 
@@ -219,7 +219,7 @@ are:
 
 If you want to start fixing open bugs, we'd really appreciate that! Bug fixing
 is central to any project. The best way to get started is by heading to our
-[bug tracker](https://github.com/rackspace/gophercloud/issues) and finding open
+[bug tracker](https://github.com/ttsubo2000/gophercloud/issues) and finding open
 bugs that you think nobody is working on. It might be useful to comment on the
 thread to see the current state of the issue and if anybody has made any
 breakthroughs on it so far.

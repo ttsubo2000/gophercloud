@@ -1,13 +1,13 @@
 package servers
 
 import (
-	"github.com/rackspace/gophercloud/openstack/compute/v2/extensions/bootfromvolume"
-	"github.com/rackspace/gophercloud/openstack/compute/v2/extensions/diskconfig"
-	os "github.com/rackspace/gophercloud/openstack/compute/v2/servers"
+	"github.com/ttsubo2000/gophercloud/openstack/compute/v2/extensions/bootfromvolume"
+	"github.com/ttsubo2000/gophercloud/openstack/compute/v2/extensions/diskconfig"
+	os "github.com/ttsubo2000/gophercloud/openstack/compute/v2/servers"
 )
 
-// CreateOpts specifies all of the options that Rackspace accepts in its Create request, including
-// the union of all extensions that Rackspace supports.
+// CreateOpts specifies all of the options that ttsubo2000 accepts in its Create request, including
+// the union of all extensions that ttsubo2000 supports.
 type CreateOpts struct {
 	// Name [required] is the name to assign to the newly launched server.
 	Name string
@@ -58,7 +58,7 @@ type CreateOpts struct {
 	// password will be created and returned in the response.
 	AdminPass string
 
-	// Rackspace-specific extensions begin here.
+	// ttsubo2000-specific extensions begin here.
 
 	// KeyPair [optional] specifies the name of the SSH KeyPair to be injected into the newly launched
 	// server. See the "keypairs" extension in OpenStack compute v2.
@@ -74,7 +74,7 @@ type CreateOpts struct {
 }
 
 // ToServerCreateMap constructs a request body using all of the OpenStack extensions that are
-// active on Rackspace.
+// active on ttsubo2000.
 func (opts CreateOpts) ToServerCreateMap() (map[string]interface{}, error) {
 	base := os.CreateOpts{
 		Name:             opts.Name,
@@ -125,7 +125,7 @@ func (opts CreateOpts) ToServerCreateMap() (map[string]interface{}, error) {
 }
 
 // RebuildOpts represents all of the configuration options used in a server rebuild operation that
-// are supported by Rackspace.
+// are supported by ttsubo2000.
 type RebuildOpts struct {
 	// Required. The ID of the image you want your server to be provisioned on
 	ImageID string
@@ -149,7 +149,7 @@ type RebuildOpts struct {
 	// Rebuild will base64-encode file contents for you.
 	Personality os.Personality
 
-	// Rackspace-specific stuff begins here.
+	// ttsubo2000-specific stuff begins here.
 
 	// DiskConfig [optional] controls how the created server's disk is partitioned. See the "diskconfig"
 	// extension in OpenStack compute v2.
@@ -157,7 +157,7 @@ type RebuildOpts struct {
 }
 
 // ToServerRebuildMap constructs a request body using all of the OpenStack extensions that are
-// active on Rackspace.
+// active on ttsubo2000.
 func (opts RebuildOpts) ToServerRebuildMap() (map[string]interface{}, error) {
 	base := os.RebuildOpts{
 		ImageID:     opts.ImageID,

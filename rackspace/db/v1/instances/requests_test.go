@@ -3,15 +3,15 @@ package instances
 import (
 	"testing"
 
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/openstack/db/v1/datastores"
-	"github.com/rackspace/gophercloud/openstack/db/v1/flavors"
-	os "github.com/rackspace/gophercloud/openstack/db/v1/instances"
-	"github.com/rackspace/gophercloud/pagination"
-	"github.com/rackspace/gophercloud/rackspace/db/v1/backups"
-	th "github.com/rackspace/gophercloud/testhelper"
-	fake "github.com/rackspace/gophercloud/testhelper/client"
-	"github.com/rackspace/gophercloud/testhelper/fixture"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/openstack/db/v1/datastores"
+	"github.com/ttsubo2000/gophercloud/openstack/db/v1/flavors"
+	os "github.com/ttsubo2000/gophercloud/openstack/db/v1/instances"
+	"github.com/ttsubo2000/gophercloud/pagination"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/db/v1/backups"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
+	fake "github.com/ttsubo2000/gophercloud/testhelper/client"
+	"github.com/ttsubo2000/gophercloud/testhelper/fixture"
 )
 
 func TestInstanceList(t *testing.T) {
@@ -179,8 +179,8 @@ func TestListReplicas(t *testing.T) {
 				Status: "ACTIVE",
 				Name:   "t1s1_ALT_GUEST",
 				Links: []gophercloud.Link{
-					gophercloud.Link{Rel: "self", Href: "https://ord.databases.api.rackspacecloud.com/v1.0/1234/instances/3c691f06-bf9a-4618-b7ec-2817ce0cf254"},
-					gophercloud.Link{Rel: "bookmark", Href: "https://ord.databases.api.rackspacecloud.com/instances/3c691f06-bf9a-4618-b7ec-2817ce0cf254"},
+					gophercloud.Link{Rel: "self", Href: "https://ord.databases.api.ttsubo2000cloud.com/v1.0/1234/instances/3c691f06-bf9a-4618-b7ec-2817ce0cf254"},
+					gophercloud.Link{Rel: "bookmark", Href: "https://ord.databases.api.ttsubo2000cloud.com/instances/3c691f06-bf9a-4618-b7ec-2817ce0cf254"},
 				},
 				ID:        "3c691f06-bf9a-4618-b7ec-2817ce0cf254",
 				IP:        []string{"10.0.0.3"},

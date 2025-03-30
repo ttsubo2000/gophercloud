@@ -5,8 +5,8 @@ package v3
 import (
 	"testing"
 
-	services3 "github.com/rackspace/gophercloud/openstack/identity/v3/services"
-	"github.com/rackspace/gophercloud/pagination"
+	services3 "github.com/ttsubo2000/gophercloud/openstack/identity/v3/services"
+	"github.com/ttsubo2000/gophercloud/pagination"
 )
 
 func TestListServices(t *testing.T) {

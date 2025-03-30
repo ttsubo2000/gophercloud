@@ -6,10 +6,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/openstack/compute/v2/flavors"
-	"github.com/rackspace/gophercloud/openstack/compute/v2/images"
-	"github.com/rackspace/gophercloud/pagination"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/openstack/compute/v2/flavors"
+	"github.com/ttsubo2000/gophercloud/openstack/compute/v2/images"
+	"github.com/ttsubo2000/gophercloud/pagination"
 )
 
 // ListOptsBuilder allows extensions to add additional parameters to the

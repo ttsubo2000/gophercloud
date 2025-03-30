@@ -129,7 +129,7 @@ func ignoreIfEnvironment(key string, value interface{}) bool {
 		return true
 	}
 	// if value contains `::`, it must be a reference to another resource type
-	// e.g. OS::Nova::Server : Rackspace::Cloud::Server
+	// e.g. OS::Nova::Server : ttsubo2000::Cloud::Server
 	if strings.Contains(valueString, "::") {
 		return true
 	}

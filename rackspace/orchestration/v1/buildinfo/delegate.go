@@ -1,8 +1,8 @@
 package buildinfo
 
 import (
-	"github.com/rackspace/gophercloud"
-	os "github.com/rackspace/gophercloud/openstack/orchestration/v1/buildinfo"
+	"github.com/ttsubo2000/gophercloud"
+	os "github.com/ttsubo2000/gophercloud/openstack/orchestration/v1/buildinfo"
 )
 
 // Get retreives build info data for the Heat deployment.

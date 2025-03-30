@@ -1,7 +1,7 @@
 package bulk
 
 import (
-	"github.com/rackspace/gophercloud"
+	"github.com/ttsubo2000/gophercloud"
 
 	"github.com/mitchellh/mapstructure"
 )

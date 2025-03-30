@@ -5,40 +5,40 @@ package v2
 import (
 	"testing"
 
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/acceptance/tools"
-	"github.com/rackspace/gophercloud/rackspace"
-	th "github.com/rackspace/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/acceptance/tools"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
 )
 
-func rackspaceAuthOptions(t *testing.T) gophercloud.AuthOptions {
+func ttsubo2000AuthOptions(t *testing.T) gophercloud.AuthOptions {
 	// Obtain credentials from the environment.
-	options, err := rackspace.AuthOptionsFromEnv()
+	options, err := ttsubo2000.AuthOptionsFromEnv()
 	th.AssertNoErr(t, err)
 	options = tools.OnlyRS(options)
 
 	if options.Username == "" {
-		t.Fatal("Please provide a Rackspace username as RS_USERNAME.")
+		t.Fatal("Please provide a ttsubo2000 username as RS_USERNAME.")
 	}
 	if options.APIKey == "" {
-		t.Fatal("Please provide a Rackspace API key as RS_API_KEY.")
+		t.Fatal("Please provide a ttsubo2000 API key as RS_API_KEY.")
 	}
 
 	return options
 }
 
 func createClient(t *testing.T, auth bool) *gophercloud.ServiceClient {
-	ao := rackspaceAuthOptions(t)
+	ao := ttsubo2000AuthOptions(t)
 
-	provider, err := rackspace.NewClient(ao.IdentityEndpoint)
+	provider, err := ttsubo2000.NewClient(ao.IdentityEndpoint)
 	th.AssertNoErr(t, err)
 
 	if auth {
-		err = rackspace.Authenticate(provider, ao)
+		err = ttsubo2000.Authenticate(provider, ao)
 		th.AssertNoErr(t, err)
 	}
 
-	return rackspace.NewIdentityV2(provider)
+	return ttsubo2000.NewIdentityV2(provider)
 }
 
 func unauthenticatedClient(t *testing.T) *gophercloud.ServiceClient {

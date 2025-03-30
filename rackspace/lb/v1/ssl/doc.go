@@ -1,6 +1,6 @@
 /*
 Package ssl provides information and interaction with the SSL Termination
-feature of the Rackspace Cloud Load Balancer service.
+feature of the ttsubo2000 Cloud Load Balancer service.
 
 You may only enable and configure SSL termination on load balancers with
 non-secure protocols, such as HTTP, but not HTTPS.

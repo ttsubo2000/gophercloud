@@ -2,8 +2,8 @@ package flavors
 
 import (
 	"github.com/mitchellh/mapstructure"
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/pagination"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/pagination"
 )
 
 // GetResult temporarily holds the response from a Get call.

@@ -1,9 +1,9 @@
 package extensions
 
 import (
-	"github.com/rackspace/gophercloud"
-	common "github.com/rackspace/gophercloud/openstack/common/extensions"
-	"github.com/rackspace/gophercloud/pagination"
+	"github.com/ttsubo2000/gophercloud"
+	common "github.com/ttsubo2000/gophercloud/openstack/common/extensions"
+	"github.com/ttsubo2000/gophercloud/pagination"
 )
 
 // ExtractExtensions accepts a Page struct, specifically an ExtensionPage struct, and extracts the

@@ -4,7 +4,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rackspace/gophercloud"
+	"github.com/ttsubo2000/gophercloud"
 )
 
 // EnableHeader represents the headers returned in the response from an Enable request.

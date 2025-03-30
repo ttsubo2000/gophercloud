@@ -3,11 +3,11 @@ package configurations
 import (
 	"testing"
 
-	"github.com/rackspace/gophercloud/pagination"
-	"github.com/rackspace/gophercloud/rackspace/db/v1/instances"
-	th "github.com/rackspace/gophercloud/testhelper"
-	fake "github.com/rackspace/gophercloud/testhelper/client"
-	"github.com/rackspace/gophercloud/testhelper/fixture"
+	"github.com/ttsubo2000/gophercloud/pagination"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/db/v1/instances"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
+	fake "github.com/ttsubo2000/gophercloud/testhelper/client"
+	"github.com/ttsubo2000/gophercloud/testhelper/fixture"
 )
 
 var (

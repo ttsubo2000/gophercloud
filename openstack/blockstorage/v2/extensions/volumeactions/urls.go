@@ -1,6 +1,6 @@
 package volumeactions
 
-import "github.com/rackspace/gophercloud"
+import "github.com/ttsubo2000/gophercloud"
 
 func attachURL(c *gophercloud.ServiceClient, id string) string {
 	return c.ServiceURL("volumes", id, "action")

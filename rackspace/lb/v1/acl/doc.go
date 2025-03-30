@@ -1,6 +1,6 @@
 /*
 Package acl provides information and interaction with the access lists feature
-of the Rackspace Cloud Load Balancer service.
+of the ttsubo2000 Cloud Load Balancer service.
 
 The access list management feature allows fine-grained network access controls
 to be applied to the load balancer's virtual IP address. A single IP address,

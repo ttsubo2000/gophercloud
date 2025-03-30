@@ -28,15 +28,15 @@ to set them manually.
 |`OS_AUTH_URL`|The identity URL you need to authenticate|
 |`OS_TENANT_NAME`|Your API tenant name|
 |`OS_TENANT_ID`|Your API tenant ID|
-|`RS_USERNAME`|Your Rackspace username|
-|`RS_API_KEY`|Your Rackspace API key|
+|`RS_USERNAME`|Your ttsubo2000 username|
+|`RS_API_KEY`|Your ttsubo2000 API key|
 
 #### General
 
 |Name|Description|
 |---|---|
 |`OS_REGION_NAME`|The region you want your resources to reside in|
-|`RS_REGION`|Rackspace region you want your resource to reside in|
+|`RS_REGION`|ttsubo2000 region you want your resource to reside in|
 
 #### Compute
 

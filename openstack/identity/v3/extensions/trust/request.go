@@ -1,9 +1,9 @@
 package trust
 
 import (
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/openstack"
-	token3 "github.com/rackspace/gophercloud/openstack/identity/v3/tokens"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/openstack"
+	token3 "github.com/ttsubo2000/gophercloud/openstack/identity/v3/tokens"
 )
 
 type AuthOptionsExt struct {

@@ -4,7 +4,7 @@ clouds. The library has a three-level hierarchy: providers, services, and
 resources.
 
 Provider structs represent the service providers that offer and manage a
-collection of services. Examples of providers include: OpenStack, Rackspace,
+collection of services. Examples of providers include: OpenStack, ttsubo2000,
 HP. These are defined like so:
 
   opts := gophercloud.AuthOptions{

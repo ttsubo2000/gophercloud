@@ -2,8 +2,8 @@ package monitors
 
 import (
 	"github.com/mitchellh/mapstructure"
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/pagination"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/pagination"
 )
 
 // Monitor represents a load balancer health monitor. A health monitor is used

@@ -1,8 +1,8 @@
 package users
 
 import (
-	"github.com/rackspace/gophercloud"
-	os "github.com/rackspace/gophercloud/openstack/db/v1/users"
+	"github.com/ttsubo2000/gophercloud"
+	os "github.com/ttsubo2000/gophercloud/openstack/db/v1/users"
 )
 
 // Create will create a new database user for the specified database instance.

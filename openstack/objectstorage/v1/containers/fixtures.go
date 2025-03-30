@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"testing"
 
-	th "github.com/rackspace/gophercloud/testhelper"
-	fake "github.com/rackspace/gophercloud/testhelper/client"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
+	fake "github.com/ttsubo2000/gophercloud/testhelper/client"
 )
 
 // ExpectedListInfo is the result expected from a call to `List` when full

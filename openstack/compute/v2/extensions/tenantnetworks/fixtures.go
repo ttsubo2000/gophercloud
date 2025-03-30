@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	th "github.com/rackspace/gophercloud/testhelper"
-	"github.com/rackspace/gophercloud/testhelper/client"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud/testhelper/client"
 )
 
 // ListOutput is a sample response to a List call.

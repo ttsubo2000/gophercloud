@@ -5,8 +5,8 @@ import (
 	"reflect"
 
 	"github.com/mitchellh/mapstructure"
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/pagination"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/pagination"
 )
 
 // ErrCannotInterpret is returned by an Extract call if the response body doesn't have the expected structure.

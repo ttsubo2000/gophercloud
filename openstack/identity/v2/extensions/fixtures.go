@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"testing"
 
-	th "github.com/rackspace/gophercloud/testhelper"
-	"github.com/rackspace/gophercloud/testhelper/client"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud/testhelper/client"
 )
 
 // ListOutput provides a single Extension result. It differs from the delegated implementation

@@ -4,8 +4,8 @@ import (
 	"time"
 
 	"github.com/mitchellh/mapstructure"
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/openstack/identity/v2/tenants"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/openstack/identity/v2/tenants"
 )
 
 // Token provides only the most basic information related to an authentication token.

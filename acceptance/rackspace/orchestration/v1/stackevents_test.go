@@ -5,13 +5,13 @@ package v1
 import (
 	"testing"
 
-	"github.com/rackspace/gophercloud"
-	osStackEvents "github.com/rackspace/gophercloud/openstack/orchestration/v1/stackevents"
-	osStacks "github.com/rackspace/gophercloud/openstack/orchestration/v1/stacks"
-	"github.com/rackspace/gophercloud/pagination"
-	"github.com/rackspace/gophercloud/rackspace/orchestration/v1/stackevents"
-	"github.com/rackspace/gophercloud/rackspace/orchestration/v1/stacks"
-	th "github.com/rackspace/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud"
+	osStackEvents "github.com/ttsubo2000/gophercloud/openstack/orchestration/v1/stackevents"
+	osStacks "github.com/ttsubo2000/gophercloud/openstack/orchestration/v1/stacks"
+	"github.com/ttsubo2000/gophercloud/pagination"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/orchestration/v1/stackevents"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/orchestration/v1/stacks"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
 )
 
 func TestStackEvents(t *testing.T) {

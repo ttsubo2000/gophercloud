@@ -2,9 +2,9 @@ package users
 
 import (
 	"github.com/mitchellh/mapstructure"
-	"github.com/rackspace/gophercloud"
-	db "github.com/rackspace/gophercloud/openstack/db/v1/databases"
-	"github.com/rackspace/gophercloud/pagination"
+	"github.com/ttsubo2000/gophercloud"
+	db "github.com/ttsubo2000/gophercloud/openstack/db/v1/databases"
+	"github.com/ttsubo2000/gophercloud/pagination"
 )
 
 // User represents a database user

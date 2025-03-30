@@ -5,14 +5,14 @@ import (
 
 	"github.com/mitchellh/mapstructure"
 
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/pagination"
-	"github.com/rackspace/gophercloud/rackspace/lb/v1/acl"
-	"github.com/rackspace/gophercloud/rackspace/lb/v1/monitors"
-	"github.com/rackspace/gophercloud/rackspace/lb/v1/nodes"
-	"github.com/rackspace/gophercloud/rackspace/lb/v1/sessions"
-	"github.com/rackspace/gophercloud/rackspace/lb/v1/throttle"
-	"github.com/rackspace/gophercloud/rackspace/lb/v1/vips"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/pagination"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/lb/v1/acl"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/lb/v1/monitors"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/lb/v1/nodes"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/lb/v1/sessions"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/lb/v1/throttle"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/lb/v1/vips"
 )
 
 var (
@@ -81,7 +81,7 @@ type CreateOpts struct {
 	Nodes []nodes.Node
 
 	// Required - protocol of the service that is being load balanced.
-	// See http://docs.rackspace.com/loadbalancers/api/v1.0/clb-devguide/content/protocols.html
+	// See http://docs.ttsubo2000.com/loadbalancers/api/v1.0/clb-devguide/content/protocols.html
 	// for a full list of supported protocols.
 	Protocol string
 
@@ -286,7 +286,7 @@ type UpdateOpts struct {
 	Name string
 
 	// Optional - the new protocol you want your load balancer to have.
-	// See http://docs.rackspace.com/loadbalancers/api/v1.0/clb-devguide/content/protocols.html
+	// See http://docs.ttsubo2000.com/loadbalancers/api/v1.0/clb-devguide/content/protocols.html
 	// for a full list of supported protocols.
 	Protocol string
 

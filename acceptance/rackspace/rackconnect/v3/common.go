@@ -6,19 +6,19 @@ import (
 	"os"
 	"testing"
 
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/rackspace"
-	th "github.com/rackspace/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
 )
 
 func newClient(t *testing.T) *gophercloud.ServiceClient {
-	ao, err := rackspace.AuthOptionsFromEnv()
+	ao, err := ttsubo2000.AuthOptionsFromEnv()
 	th.AssertNoErr(t, err)
 
-	client, err := rackspace.AuthenticatedClient(ao)
+	client, err := ttsubo2000.AuthenticatedClient(ao)
 	th.AssertNoErr(t, err)
 
-	c, err := rackspace.NewRackConnectV3(client, gophercloud.EndpointOpts{
+	c, err := ttsubo2000.NewRackConnectV3(client, gophercloud.EndpointOpts{
 		Region: os.Getenv("RS_REGION_NAME"),
 	})
 	th.AssertNoErr(t, err)

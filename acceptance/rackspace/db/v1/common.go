@@ -1,26 +1,26 @@
-// +build acceptance db rackspace
+// +build acceptance db ttsubo2000
 
 package v1
 
 import (
 	"testing"
 
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/acceptance/tools"
-	"github.com/rackspace/gophercloud/rackspace"
-	"github.com/rackspace/gophercloud/rackspace/db/v1/instances"
-	th "github.com/rackspace/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/acceptance/tools"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/db/v1/instances"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
 )
 
 func newClient(t *testing.T) *gophercloud.ServiceClient {
-	opts, err := rackspace.AuthOptionsFromEnv()
+	opts, err := ttsubo2000.AuthOptionsFromEnv()
 	th.AssertNoErr(t, err)
 	opts = tools.OnlyRS(opts)
 
-	client, err := rackspace.AuthenticatedClient(opts)
+	client, err := ttsubo2000.AuthenticatedClient(opts)
 	th.AssertNoErr(t, err)
 
-	c, err := rackspace.NewDBV1(client, gophercloud.EndpointOpts{
+	c, err := ttsubo2000.NewDBV1(client, gophercloud.EndpointOpts{
 		Region: "IAD",
 	})
 	th.AssertNoErr(t, err)

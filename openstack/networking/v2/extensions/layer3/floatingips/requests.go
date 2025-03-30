@@ -3,8 +3,8 @@ package floatingips
 import (
 	"fmt"
 
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/pagination"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/pagination"
 )
 
 // ListOpts allows the filtering and sorting of paginated collections through

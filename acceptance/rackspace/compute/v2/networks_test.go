@@ -1,13 +1,13 @@
-// +build acceptance rackspace
+// +build acceptance ttsubo2000
 
 package v2
 
 import (
 	"testing"
 
-	"github.com/rackspace/gophercloud/pagination"
-	"github.com/rackspace/gophercloud/rackspace/compute/v2/networks"
-	th "github.com/rackspace/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud/pagination"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/compute/v2/networks"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
 )
 
 func TestNetworks(t *testing.T) {

@@ -1,5 +1,5 @@
 // Package serviceassets provides information and interaction with the
-// serviceassets API resource in the Rackspace CDN service. This API resource
+// serviceassets API resource in the ttsubo2000 CDN service. This API resource
 // allows for deleting cached assets.
 //
 // A service distributes assets across the network. Service assets let you

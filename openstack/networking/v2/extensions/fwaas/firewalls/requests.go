@@ -1,8 +1,8 @@
 package firewalls
 
 import (
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/pagination"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/pagination"
 )
 
 // AdminState gives users a solid type to work with for create and update

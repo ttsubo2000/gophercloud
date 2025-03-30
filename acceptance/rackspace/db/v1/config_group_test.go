@@ -1,13 +1,13 @@
-// +build acceptance db rackspace
+// +build acceptance db ttsubo2000
 
 package v1
 
 import (
-	"github.com/rackspace/gophercloud/acceptance/tools"
-	os "github.com/rackspace/gophercloud/openstack/db/v1/configurations"
-	"github.com/rackspace/gophercloud/pagination"
-	config "github.com/rackspace/gophercloud/rackspace/db/v1/configurations"
-	"github.com/rackspace/gophercloud/rackspace/db/v1/instances"
+	"github.com/ttsubo2000/gophercloud/acceptance/tools"
+	os "github.com/ttsubo2000/gophercloud/openstack/db/v1/configurations"
+	"github.com/ttsubo2000/gophercloud/pagination"
+	config "github.com/ttsubo2000/gophercloud/ttsubo2000/db/v1/configurations"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/db/v1/instances"
 )
 
 func (c *context) createConfigGrp() {

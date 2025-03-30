@@ -1,8 +1,8 @@
 package pagination
 
 import (
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/testhelper"
 )
 
 func createClient() *gophercloud.ServiceClient {

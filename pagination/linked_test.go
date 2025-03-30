@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/mitchellh/mapstructure"
-	"github.com/rackspace/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud/testhelper"
 )
 
 // LinkedPager sample and test cases.

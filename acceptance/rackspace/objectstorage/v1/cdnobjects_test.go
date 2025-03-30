@@ -1,4 +1,4 @@
-// +build acceptance rackspace objectstorage v1
+// +build acceptance ttsubo2000 objectstorage v1
 
 package v1
 
@@ -6,11 +6,11 @@ import (
 	"bytes"
 	"testing"
 
-	raxCDNContainers "github.com/rackspace/gophercloud/rackspace/objectstorage/v1/cdncontainers"
-	raxCDNObjects "github.com/rackspace/gophercloud/rackspace/objectstorage/v1/cdnobjects"
-	raxContainers "github.com/rackspace/gophercloud/rackspace/objectstorage/v1/containers"
-	raxObjects "github.com/rackspace/gophercloud/rackspace/objectstorage/v1/objects"
-	th "github.com/rackspace/gophercloud/testhelper"
+	raxCDNContainers "github.com/ttsubo2000/gophercloud/ttsubo2000/objectstorage/v1/cdncontainers"
+	raxCDNObjects "github.com/ttsubo2000/gophercloud/ttsubo2000/objectstorage/v1/cdnobjects"
+	raxContainers "github.com/ttsubo2000/gophercloud/ttsubo2000/objectstorage/v1/containers"
+	raxObjects "github.com/ttsubo2000/gophercloud/ttsubo2000/objectstorage/v1/objects"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
 )
 
 func TestCDNObjects(t *testing.T) {

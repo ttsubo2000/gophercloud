@@ -8,7 +8,7 @@ extensible, maintainable and easy-to-use.
 Below we've compiled upgrade instructions for the various services that
 existed before. If you have a specific issue that is not addressed below,
 please [submit an issue](/issues/new) or
-[e-mail our support team](https://developer.rackspace.com/support/).
+[e-mail our support team](https://developer.ttsubo2000.com/support/).
 
 * [Authentication](#authentication)
 * [Servers](#servers)
@@ -35,15 +35,15 @@ please [submit an issue](/issues/new) or
 
 One of the major differences that this release introduces is the level of
 sub-packaging to differentiate between services and providers. You now have
-the option of authenticating with OpenStack and other providers (like Rackspace).
+the option of authenticating with OpenStack and other providers (like ttsubo2000).
 
 To authenticate with a vanilla OpenStack installation, you can either specify
 your credentials like this:
 
 ```go
 import (
-  "github.com/rackspace/gophercloud"
-  "github.com/rackspace/gophercloud/openstack"
+  "github.com/ttsubo2000/gophercloud"
+  "github.com/ttsubo2000/gophercloud/openstack"
 )
 
 opts := gophercloud.AuthOptions{
@@ -94,8 +94,8 @@ arbitrary functionality. So, an example with list servers:
 ```go
 import (
   "fmt"
-  "github.com/rackspace/gophercloud/pagination"
-  "github.com/rackspace/gophercloud/openstack/compute/v2/servers"
+  "github.com/ttsubo2000/gophercloud/pagination"
+  "github.com/ttsubo2000/gophercloud/openstack/compute/v2/servers"
 )
 
 // We have the option of filtering the server list. If we want the full
@@ -119,7 +119,7 @@ err := pager.EachPage(func(page pagination.Page) (bool, error) {
 ## Get server details
 
 ```go
-import "github.com/rackspace/gophercloud/openstack/compute/v2/servers"
+import "github.com/ttsubo2000/gophercloud/openstack/compute/v2/servers"
 
 // Get the HTTP result
 response := servers.Get(client, "server_id")
@@ -131,7 +131,7 @@ server, err := response.Extract()
 ## Create server
 
 ```go
-import "github.com/rackspace/gophercloud/openstack/compute/v2/servers"
+import "github.com/ttsubo2000/gophercloud/openstack/compute/v2/servers"
 
 // Define our options
 opts := servers.CreateOpts{
@@ -150,7 +150,7 @@ server, err := response.Extract()
 ## Change admin password
 
 ```go
-import "github.com/rackspace/gophercloud/openstack/compute/v2/servers"
+import "github.com/ttsubo2000/gophercloud/openstack/compute/v2/servers"
 
 result := servers.ChangeAdminPassword(client, "server_id", "newPassword_&123")
 ```
@@ -158,7 +158,7 @@ result := servers.ChangeAdminPassword(client, "server_id", "newPassword_&123")
 ## Resize server
 
 ```go
-import "github.com/rackspace/gophercloud/openstack/compute/v2/servers"
+import "github.com/ttsubo2000/gophercloud/openstack/compute/v2/servers"
 
 result := servers.Resize(client, "server_id", "new_flavor_id")
 ```
@@ -166,7 +166,7 @@ result := servers.Resize(client, "server_id", "new_flavor_id")
 ## Reboot server
 
 ```go
-import "github.com/rackspace/gophercloud/openstack/compute/v2/servers"
+import "github.com/ttsubo2000/gophercloud/openstack/compute/v2/servers"
 
 // You have a choice of two reboot methods: servers.SoftReboot or servers.HardReboot
 result := servers.Reboot(client, "server_id", servers.SoftReboot)
@@ -175,7 +175,7 @@ result := servers.Reboot(client, "server_id", servers.SoftReboot)
 ## Update server
 
 ```go
-import "github.com/rackspace/gophercloud/openstack/compute/v2/servers"
+import "github.com/ttsubo2000/gophercloud/openstack/compute/v2/servers"
 
 opts := servers.UpdateOpts{Name: "new_name"}
 
@@ -185,7 +185,7 @@ server, err := servers.Update(client, "server_id", opts).Extract()
 ## Rebuild server
 
 ```go
-import "github.com/rackspace/gophercloud/openstack/compute/v2/servers"
+import "github.com/ttsubo2000/gophercloud/openstack/compute/v2/servers"
 
 // You have the option of specifying additional options
 opts := RebuildOpts{
@@ -204,7 +204,7 @@ server, err := result.Extract()
 ## Delete server
 
 ```go
-import "github.com/rackspace/gophercloud/openstack/compute/v2/servers"
+import "github.com/ttsubo2000/gophercloud/openstack/compute/v2/servers"
 
 response := servers.Delete(client, "server_id")
 ```
@@ -222,8 +222,8 @@ in a callback over each page:
 
 ```go
 import (
-  "github.com/rackspace/gophercloud/pagination"
-  "github.com/rackspace/gophercloud/openstack/compute/v2/images"
+  "github.com/ttsubo2000/gophercloud/pagination"
+  "github.com/ttsubo2000/gophercloud/openstack/compute/v2/images"
 )
 
 // We have the option of filtering the image list. If we want the full
@@ -247,8 +247,8 @@ err := pager.EachPage(func(page pagination.Page) (bool, error) {
 
 ```go
 import (
-  "github.com/rackspace/gophercloud/pagination"
-  "github.com/rackspace/gophercloud/openstack/compute/v2/flavors"
+  "github.com/ttsubo2000/gophercloud/pagination"
+  "github.com/ttsubo2000/gophercloud/openstack/compute/v2/flavors"
 )
 
 // We have the option of filtering the flavor list. If we want the full
@@ -274,7 +274,7 @@ Image management has been shifted to Glance, but unfortunately this service is
 not supported as of yet. You can, however, list Compute images like so:
 
 ```go
-import "github.com/rackspace/gophercloud/openstack/compute/v2/images"
+import "github.com/ttsubo2000/gophercloud/openstack/compute/v2/images"
 
 // Retrieve a pager (i.e. a paginated collection)
 pager := images.List(client, opts)
@@ -294,7 +294,7 @@ err := pager.EachPage(func(page pagination.Page) (bool, error) {
 ## List keypairs
 
 ```go
-import "github.com/rackspace/gophercloud/openstack/compute/v2/extensions/keypairs"
+import "github.com/ttsubo2000/gophercloud/openstack/compute/v2/extensions/keypairs"
 
 // Retrieve a pager (i.e. a paginated collection)
 pager := keypairs.List(client, opts)
@@ -315,7 +315,7 @@ To create a new keypair, you need to specify its name and, optionally, a
 pregenerated OpenSSH-formatted public key.
 
 ```go
-import "github.com/rackspace/gophercloud/openstack/compute/v2/extensions/keypairs"
+import "github.com/ttsubo2000/gophercloud/openstack/compute/v2/extensions/keypairs"
 
 opts := keypairs.CreateOpts{
   Name: "new_key",

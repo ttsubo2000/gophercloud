@@ -3,8 +3,8 @@ package policies
 import (
 	"errors"
 
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/pagination"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/pagination"
 )
 
 // Validation errors returned by create or update operations.

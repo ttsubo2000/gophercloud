@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"testing"
 
-	th "github.com/rackspace/gophercloud/testhelper"
-	fake "github.com/rackspace/gophercloud/testhelper/client"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
+	fake "github.com/ttsubo2000/gophercloud/testhelper/client"
 )
 
 // HandleListCDNServiceSuccessfully creates an HTTP handler at `/services` on the test handler mux
@@ -214,7 +214,7 @@ func HandleCreateCDNServiceSuccessfully(t *testing.T) {
         "flavor_id": "cdn"
       }
    `)
-		w.Header().Add("Location", "https://global.cdn.api.rackspacecloud.com/v1.0/services/96737ae3-cfc1-4c72-be88-5d0e7cc9a3f0")
+		w.Header().Add("Location", "https://global.cdn.api.ttsubo2000cloud.com/v1.0/services/96737ae3-cfc1-4c72-be88-5d0e7cc9a3f0")
 		w.WriteHeader(http.StatusAccepted)
 	})
 }
@@ -287,7 +287,7 @@ func HandleGetCDNServiceSuccessfully(t *testing.T) {
         "errors" : [],
         "links": [
             {
-                "href": "https://global.cdn.api.rackspacecloud.com/v1.0/110011/services/96737ae3-cfc1-4c72-be88-5d0e7cc9a3f0",
+                "href": "https://global.cdn.api.ttsubo2000cloud.com/v1.0/110011/services/96737ae3-cfc1-4c72-be88-5d0e7cc9a3f0",
                 "rel": "self"
             },
             {
@@ -295,7 +295,7 @@ func HandleGetCDNServiceSuccessfully(t *testing.T) {
                 "rel": "access_url"
             },
             {
-                "href": "https://global.cdn.api.rackspacecloud.com/v1.0/110011/flavors/cdn",
+                "href": "https://global.cdn.api.ttsubo2000cloud.com/v1.0/110011/flavors/cdn",
                 "rel": "flavor"
             }
         ]

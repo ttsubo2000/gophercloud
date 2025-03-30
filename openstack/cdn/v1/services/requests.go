@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/pagination"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/pagination"
 )
 
 // ListOptsBuilder allows extensions to add additional parameters to the
@@ -185,7 +185,7 @@ func Create(c *gophercloud.ServiceClient, opts CreateOptsBuilder) CreateResult {
 
 // Get retrieves a specific service based on its URL or its unique ID. For
 // example, both "96737ae3-cfc1-4c72-be88-5d0e7cc9a3f0" and
-// "https://global.cdn.api.rackspacecloud.com/v1.0/services/96737ae3-cfc1-4c72-be88-5d0e7cc9a3f0"
+// "https://global.cdn.api.ttsubo2000cloud.com/v1.0/services/96737ae3-cfc1-4c72-be88-5d0e7cc9a3f0"
 // are valid options for idOrURL.
 func Get(c *gophercloud.ServiceClient, idOrURL string) GetResult {
 	var url string
@@ -335,7 +335,7 @@ type UpdateOpts []Patch
 // Update accepts a slice of Patch operations (Insertion, Append, Replacement or Removal) and
 // updates an existing CDN service using the values provided. idOrURL can be either the service's
 // URL or its ID. For example, both "96737ae3-cfc1-4c72-be88-5d0e7cc9a3f0" and
-// "https://global.cdn.api.rackspacecloud.com/v1.0/services/96737ae3-cfc1-4c72-be88-5d0e7cc9a3f0"
+// "https://global.cdn.api.ttsubo2000cloud.com/v1.0/services/96737ae3-cfc1-4c72-be88-5d0e7cc9a3f0"
 // are valid options for idOrURL.
 func Update(c *gophercloud.ServiceClient, idOrURL string, opts UpdateOpts) UpdateResult {
 	var url string
@@ -362,7 +362,7 @@ func Update(c *gophercloud.ServiceClient, idOrURL string, opts UpdateOpts) Updat
 
 // Delete accepts a service's ID or its URL and deletes the CDN service
 // associated with it. For example, both "96737ae3-cfc1-4c72-be88-5d0e7cc9a3f0" and
-// "https://global.cdn.api.rackspacecloud.com/v1.0/services/96737ae3-cfc1-4c72-be88-5d0e7cc9a3f0"
+// "https://global.cdn.api.ttsubo2000cloud.com/v1.0/services/96737ae3-cfc1-4c72-be88-5d0e7cc9a3f0"
 // are valid options for idOrURL.
 func Delete(c *gophercloud.ServiceClient, idOrURL string) DeleteResult {
 	var url string

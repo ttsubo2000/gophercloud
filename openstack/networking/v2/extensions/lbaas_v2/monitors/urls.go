@@ -1,6 +1,6 @@
 package monitors
 
-import "github.com/rackspace/gophercloud"
+import "github.com/ttsubo2000/gophercloud"
 
 const (
 	rootPath     = "lbaas"

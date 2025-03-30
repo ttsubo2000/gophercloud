@@ -3,11 +3,11 @@ package flavors
 import (
 	"testing"
 
-	"github.com/rackspace/gophercloud"
-	os "github.com/rackspace/gophercloud/openstack/db/v1/flavors"
-	"github.com/rackspace/gophercloud/pagination"
-	th "github.com/rackspace/gophercloud/testhelper"
-	fake "github.com/rackspace/gophercloud/testhelper/client"
+	"github.com/ttsubo2000/gophercloud"
+	os "github.com/ttsubo2000/gophercloud/openstack/db/v1/flavors"
+	"github.com/ttsubo2000/gophercloud/pagination"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
+	fake "github.com/ttsubo2000/gophercloud/testhelper/client"
 )
 
 func TestListFlavors(t *testing.T) {

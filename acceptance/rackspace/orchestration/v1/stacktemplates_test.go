@@ -5,12 +5,12 @@ package v1
 import (
 	"testing"
 
-	"github.com/rackspace/gophercloud"
-	osStacks "github.com/rackspace/gophercloud/openstack/orchestration/v1/stacks"
-	osStacktemplates "github.com/rackspace/gophercloud/openstack/orchestration/v1/stacktemplates"
-	"github.com/rackspace/gophercloud/rackspace/orchestration/v1/stacks"
-	"github.com/rackspace/gophercloud/rackspace/orchestration/v1/stacktemplates"
-	th "github.com/rackspace/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud"
+	osStacks "github.com/ttsubo2000/gophercloud/openstack/orchestration/v1/stacks"
+	osStacktemplates "github.com/ttsubo2000/gophercloud/openstack/orchestration/v1/stacktemplates"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/orchestration/v1/stacks"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/orchestration/v1/stacktemplates"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
 )
 
 func TestStackTemplates(t *testing.T) {

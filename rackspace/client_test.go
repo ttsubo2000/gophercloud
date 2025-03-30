@@ -1,12 +1,12 @@
-package rackspace
+package ttsubo2000
 
 import (
 	"fmt"
 	"net/http"
 	"testing"
 
-	"github.com/rackspace/gophercloud"
-	th "github.com/rackspace/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
 )
 
 func TestAuthenticatedClientV2(t *testing.T) {

@@ -1,9 +1,9 @@
 package stackresources
 
 import (
-	"github.com/rackspace/gophercloud"
-	os "github.com/rackspace/gophercloud/openstack/orchestration/v1/stackresources"
-	"github.com/rackspace/gophercloud/pagination"
+	"github.com/ttsubo2000/gophercloud"
+	os "github.com/ttsubo2000/gophercloud/openstack/orchestration/v1/stackresources"
+	"github.com/ttsubo2000/gophercloud/pagination"
 )
 
 // Find retreives stack resources for the given stack name.

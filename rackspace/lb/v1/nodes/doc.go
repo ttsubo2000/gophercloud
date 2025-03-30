@@ -1,6 +1,6 @@
 /*
 Package nodes provides information and interaction with the Node API resource
-for the Rackspace Cloud Load Balancer service.
+for the ttsubo2000 Cloud Load Balancer service.
 
 Nodes are responsible for servicing the requests received through the load
 balancer's virtual IP. A node is usually a virtual machine. By default, the

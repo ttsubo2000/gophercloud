@@ -1,10 +1,10 @@
-package rackspace
+package ttsubo2000
 
 import (
 	"fmt"
 	"os"
 
-	"github.com/rackspace/gophercloud"
+	"github.com/ttsubo2000/gophercloud"
 )
 
 var nilOptions = gophercloud.AuthOptions{}
@@ -27,7 +27,7 @@ func prefixedEnv(base string) string {
 }
 
 // AuthOptionsFromEnv fills out an identity.AuthOptions structure with the
-// settings found on the various Rackspace RS_* environment variables.
+// settings found on the various ttsubo2000 RS_* environment variables.
 func AuthOptionsFromEnv() (gophercloud.AuthOptions, error) {
 	authURL := prefixedEnv("AUTH_URL")
 	username := prefixedEnv("USERNAME")

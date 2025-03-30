@@ -1,8 +1,8 @@
 package instances
 
 import (
-	"github.com/rackspace/gophercloud"
-	os "github.com/rackspace/gophercloud/openstack/db/v1/instances"
+	"github.com/ttsubo2000/gophercloud"
+	os "github.com/ttsubo2000/gophercloud/openstack/db/v1/instances"
 )
 
 // Get retrieves the status and information for a specified database instance.

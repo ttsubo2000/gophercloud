@@ -1,9 +1,9 @@
 # Deprecated
 
-Rackspace/Gophercloud has been deprecated in lieu of https://github.com/gophercloud/gophercloud. Please see https://github.com/rackspace/gophercloud/issues/592 for more information.
+ttsubo2000/Gophercloud has been deprecated in lieu of https://github.com/gophercloud/gophercloud. Please see https://github.com/ttsubo2000/gophercloud/issues/592 for more information.
 
 # Gophercloud: an OpenStack SDK for Go
-[![Build Status](https://travis-ci.org/rackspace/gophercloud.svg?branch=master)](https://travis-ci.org/rackspace/gophercloud) [![Coverage Status](https://coveralls.io/repos/rackspace/gophercloud/badge.png)](https://coveralls.io/r/rackspace/gophercloud)
+[![Build Status](https://travis-ci.org/ttsubo2000/gophercloud.svg?branch=master)](https://travis-ci.org/ttsubo2000/gophercloud) [![Coverage Status](https://coveralls.io/repos/ttsubo2000/gophercloud/badge.png)](https://coveralls.io/r/ttsubo2000/gophercloud)
 
 Gophercloud is a flexible SDK that allows you to consume and work with OpenStack
 clouds in a simple and idiomatic way using golang. Many services are supported,
@@ -14,7 +14,7 @@ documentation, unit tests and acceptance tests.
 ## Useful links
 
 * [Gophercloud homepage](http://gophercloud.io)
-* [Reference documentation](http://godoc.org/github.com/rackspace/gophercloud)
+* [Reference documentation](http://godoc.org/github.com/ttsubo2000/gophercloud)
 * [Getting started guides](http://gophercloud.io/docs)
 * [Effective Go](https://golang.org/doc/effective_go.html)
 
@@ -34,9 +34,9 @@ your projects, such as [godep](https://github.com/tools/godep). Once this is set
 Gophercloud as a dependency like so:
 
 ```bash
-go get github.com/rackspace/gophercloud
+go get github.com/ttsubo2000/gophercloud
 
-# Edit your code to import relevant packages from "github.com/rackspace/gophercloud"
+# Edit your code to import relevant packages from "github.com/ttsubo2000/gophercloud"
 
 godep save ./...
 ```
@@ -77,9 +77,9 @@ explicitly, or tell Gophercloud to use environment variables:
 
 ```go
 import (
-  "github.com/rackspace/gophercloud"
-  "github.com/rackspace/gophercloud/openstack"
-  "github.com/rackspace/gophercloud/openstack/utils"
+  "github.com/ttsubo2000/gophercloud"
+  "github.com/ttsubo2000/gophercloud/openstack"
+  "github.com/ttsubo2000/gophercloud/openstack/utils"
 )
 
 // Option 1: Pass in the values yourself
@@ -123,7 +123,7 @@ in the flavor ID (hardware specification) and image ID (operating system) we're
 interested in:
 
 ```go
-import "github.com/rackspace/gophercloud/openstack/compute/v2/servers"
+import "github.com/ttsubo2000/gophercloud/openstack/compute/v2/servers"
 
 server, err := servers.Create(client, servers.CreateOpts{
   Name:      "My new server!",
@@ -136,7 +136,7 @@ If you are unsure about what images and flavors are, you can read our [Compute
 Getting Started guide](http://gophercloud.io/docs/compute). The above code
 sample creates a new server with the parameters, and embodies the new resource
 in the `server` variable (a
-[`servers.Server`](http://godoc.org/github.com/rackspace/gophercloud) struct).
+[`servers.Server`](http://godoc.org/github.com/ttsubo2000/gophercloud) struct).
 
 ### Next steps
 
@@ -155,10 +155,10 @@ Engaging the community and lowering barriers for contributors is something we
 care a lot about. For this reason, we've taken the time to write a [contributing
 guide](./CONTRIBUTING.md) for folks interested in getting involved in our project.
 If you're not sure how you can get involved, feel free to submit an issue or
-[contact us](https://developer.rackspace.com/support/). You don't need to be a
+[contact us](https://developer.ttsubo2000.com/support/). You don't need to be a
 Go expert - all members of the community are welcome!
 
 ## Help and feedback
 
 If you're struggling with something or have spotted a potential bug, feel free
-to submit an issue to our [bug tracker](/issues) or [contact us directly](https://developer.rackspace.com/support/).
+to submit an issue to our [bug tracker](/issues) or [contact us directly](https://developer.ttsubo2000.com/support/).

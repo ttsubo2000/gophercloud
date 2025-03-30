@@ -3,10 +3,10 @@
 package servers
 
 import (
-	os "github.com/rackspace/gophercloud/openstack/compute/v2/servers"
+	os "github.com/ttsubo2000/gophercloud/openstack/compute/v2/servers"
 )
 
-// ListOutput is the recorded output of a Rackspace servers.List request.
+// ListOutput is the recorded output of a ttsubo2000 servers.List request.
 const ListOutput = `
 {
 	"servers": [
@@ -40,7 +40,7 @@ const ListOutput = `
 				"id": "performance1-8",
 				"links": [
 					{
-						"href": "https://dfw.servers.api.rackspacecloud.com/111111/flavors/performance1-8",
+						"href": "https://dfw.servers.api.ttsubo2000cloud.com/111111/flavors/performance1-8",
 						"rel": "bookmark"
 					}
 				]
@@ -51,7 +51,7 @@ const ListOutput = `
 				"id": "255df5fb-e3d4-45a3-9a07-c976debf7c14",
 				"links": [
 					{
-						"href": "https://dfw.servers.api.rackspacecloud.com/111111/images/255df5fb-e3d4-45a3-9a07-c976debf7c14",
+						"href": "https://dfw.servers.api.ttsubo2000cloud.com/111111/images/255df5fb-e3d4-45a3-9a07-c976debf7c14",
 						"rel": "bookmark"
 					}
 				]
@@ -59,11 +59,11 @@ const ListOutput = `
 			"key_name": "mykey",
 			"links": [
 				{
-					"href": "https://dfw.servers.api.rackspacecloud.com/v2/111111/servers/59818cee-bc8c-44eb-8073-673ee65105f7",
+					"href": "https://dfw.servers.api.ttsubo2000cloud.com/v2/111111/servers/59818cee-bc8c-44eb-8073-673ee65105f7",
 					"rel": "self"
 				},
 				{
-					"href": "https://dfw.servers.api.rackspacecloud.com/111111/servers/59818cee-bc8c-44eb-8073-673ee65105f7",
+					"href": "https://dfw.servers.api.ttsubo2000cloud.com/111111/servers/59818cee-bc8c-44eb-8073-673ee65105f7",
 					"rel": "bookmark"
 				}
 			],
@@ -105,7 +105,7 @@ const ListOutput = `
 				"id": "performance1-2",
 				"links": [
 					{
-						"href": "https://dfw.servers.api.rackspacecloud.com/111111/flavors/performance1-2",
+						"href": "https://dfw.servers.api.ttsubo2000cloud.com/111111/flavors/performance1-2",
 						"rel": "bookmark"
 					}
 				]
@@ -116,7 +116,7 @@ const ListOutput = `
 				"id": "bb02b1a3-bc77-4d17-ab5b-421d89850fca",
 				"links": [
 					{
-						"href": "https://dfw.servers.api.rackspacecloud.com/111111/images/bb02b1a3-bc77-4d17-ab5b-421d89850fca",
+						"href": "https://dfw.servers.api.ttsubo2000cloud.com/111111/images/bb02b1a3-bc77-4d17-ab5b-421d89850fca",
 						"rel": "bookmark"
 					}
 				]
@@ -124,11 +124,11 @@ const ListOutput = `
 			"key_name": "otherkey",
 			"links": [
 				{
-					"href": "https://dfw.servers.api.rackspacecloud.com/v2/111111/servers/25f1c7f5-e00a-4715-b355-16e24b2f4630",
+					"href": "https://dfw.servers.api.ttsubo2000cloud.com/v2/111111/servers/25f1c7f5-e00a-4715-b355-16e24b2f4630",
 					"rel": "self"
 				},
 				{
-					"href": "https://dfw.servers.api.rackspacecloud.com/111111/servers/25f1c7f5-e00a-4715-b355-16e24b2f4630",
+					"href": "https://dfw.servers.api.ttsubo2000cloud.com/111111/servers/25f1c7f5-e00a-4715-b355-16e24b2f4630",
 					"rel": "bookmark"
 				}
 			],
@@ -144,7 +144,7 @@ const ListOutput = `
 }
 `
 
-// GetOutput is the recorded output of a Rackspace servers.Get request.
+// GetOutput is the recorded output of a ttsubo2000 servers.Get request.
 const GetOutput = `
 {
 	"server": {
@@ -177,7 +177,7 @@ const GetOutput = `
 			"id": "performance1-1",
 			"links": [
 				{
-					"href": "https://dfw.servers.api.rackspacecloud.com/111111/flavors/performance1-1",
+					"href": "https://dfw.servers.api.ttsubo2000cloud.com/111111/flavors/performance1-1",
 					"rel": "bookmark"
 				}
 			]
@@ -188,7 +188,7 @@ const GetOutput = `
 			"id": "e19a734c-c7e6-443a-830c-242209c4d65d",
 			"links": [
 				{
-					"href": "https://dfw.servers.api.rackspacecloud.com/111111/images/e19a734c-c7e6-443a-830c-242209c4d65d",
+					"href": "https://dfw.servers.api.ttsubo2000cloud.com/111111/images/e19a734c-c7e6-443a-830c-242209c4d65d",
 					"rel": "bookmark"
 				}
 			]
@@ -196,11 +196,11 @@ const GetOutput = `
 		"key_name": null,
 		"links": [
 			{
-				"href": "https://dfw.servers.api.rackspacecloud.com/v2/111111/servers/8c65cb68-0681-4c30-bc88-6b83a8a26aee",
+				"href": "https://dfw.servers.api.ttsubo2000cloud.com/v2/111111/servers/8c65cb68-0681-4c30-bc88-6b83a8a26aee",
 				"rel": "self"
 			},
 			{
-				"href": "https://dfw.servers.api.rackspacecloud.com/111111/servers/8c65cb68-0681-4c30-bc88-6b83a8a26aee",
+				"href": "https://dfw.servers.api.ttsubo2000cloud.com/111111/servers/8c65cb68-0681-4c30-bc88-6b83a8a26aee",
 				"rel": "bookmark"
 			}
 		],
@@ -215,7 +215,7 @@ const GetOutput = `
 }
 `
 
-// UpdateOutput is the recorded output of a Rackspace servers.Update request.
+// UpdateOutput is the recorded output of a ttsubo2000 servers.Update request.
 const UpdateOutput = `
 {
 	"server": {
@@ -248,7 +248,7 @@ const UpdateOutput = `
 			"id": "performance1-1",
 			"links": [
 			{
-				"href": "https://dfw.servers.api.rackspacecloud.com/111111/flavors/performance1-1",
+				"href": "https://dfw.servers.api.ttsubo2000cloud.com/111111/flavors/performance1-1",
 				"rel": "bookmark"
 			}
 			]
@@ -259,7 +259,7 @@ const UpdateOutput = `
 			"id": "e19a734c-c7e6-443a-830c-242209c4d65d",
 			"links": [
 			{
-				"href": "https://dfw.servers.api.rackspacecloud.com/111111/images/e19a734c-c7e6-443a-830c-242209c4d65d",
+				"href": "https://dfw.servers.api.ttsubo2000cloud.com/111111/images/e19a734c-c7e6-443a-830c-242209c4d65d",
 				"rel": "bookmark"
 			}
 			]
@@ -267,11 +267,11 @@ const UpdateOutput = `
 		"key_name": null,
 		"links": [
 		{
-			"href": "https://dfw.servers.api.rackspacecloud.com/v2/111111/servers/8c65cb68-0681-4c30-bc88-6b83a8a26aee",
+			"href": "https://dfw.servers.api.ttsubo2000cloud.com/v2/111111/servers/8c65cb68-0681-4c30-bc88-6b83a8a26aee",
 			"rel": "self"
 		},
 		{
-			"href": "https://dfw.servers.api.rackspacecloud.com/111111/servers/8c65cb68-0681-4c30-bc88-6b83a8a26aee",
+			"href": "https://dfw.servers.api.ttsubo2000cloud.com/111111/servers/8c65cb68-0681-4c30-bc88-6b83a8a26aee",
 			"rel": "bookmark"
 		}
 		],
@@ -286,7 +286,7 @@ const UpdateOutput = `
 }
 `
 
-// CreateOutput contains a sample of Rackspace's response to a Create call.
+// CreateOutput contains a sample of ttsubo2000's response to a Create call.
 const CreateOutput = `
 {
 	"server": {
@@ -295,11 +295,11 @@ const CreateOutput = `
 		"id": "bb63327b-6a2f-34bc-b0ef-4b6d97ea637e",
 		"links": [
 			{
-				"href": "https://dfw.servers.api.rackspacecloud.com/v2/111111/servers/bb63327b-6a2f-34bc-b0ef-4b6d97ea637e",
+				"href": "https://dfw.servers.api.ttsubo2000cloud.com/v2/111111/servers/bb63327b-6a2f-34bc-b0ef-4b6d97ea637e",
 				"rel": "self"
 			},
 			{
-				"href": "https://dfw.servers.api.rackspacecloud.com/111111/servers/bb63327b-6a2f-34bc-b0ef-4b6d97ea637e",
+				"href": "https://dfw.servers.api.ttsubo2000cloud.com/111111/servers/bb63327b-6a2f-34bc-b0ef-4b6d97ea637e",
 				"rel": "bookmark"
 			}
 		]
@@ -324,7 +324,7 @@ var DevstackServer = os.Server{
 		"id": "255df5fb-e3d4-45a3-9a07-c976debf7c14",
 		"links": []interface{}{
 			map[string]interface{}{
-				"href": "https://dfw.servers.api.rackspacecloud.com/111111/images/255df5fb-e3d4-45a3-9a07-c976debf7c14",
+				"href": "https://dfw.servers.api.ttsubo2000cloud.com/111111/images/255df5fb-e3d4-45a3-9a07-c976debf7c14",
 				"rel":  "bookmark",
 			},
 		},
@@ -333,7 +333,7 @@ var DevstackServer = os.Server{
 		"id": "performance1-8",
 		"links": []interface{}{
 			map[string]interface{}{
-				"href": "https://dfw.servers.api.rackspacecloud.com/111111/flavors/performance1-8",
+				"href": "https://dfw.servers.api.ttsubo2000cloud.com/111111/flavors/performance1-8",
 				"rel":  "bookmark",
 			},
 		},
@@ -359,11 +359,11 @@ var DevstackServer = os.Server{
 	Metadata: map[string]interface{}{},
 	Links: []interface{}{
 		map[string]interface{}{
-			"href": "https://dfw.servers.api.rackspacecloud.com/v2/111111/servers/59918cee-bd9d-44eb-8173-673ee75105f7",
+			"href": "https://dfw.servers.api.ttsubo2000cloud.com/v2/111111/servers/59918cee-bd9d-44eb-8173-673ee75105f7",
 			"rel":  "self",
 		},
 		map[string]interface{}{
-			"href": "https://dfw.servers.api.rackspacecloud.com/v2/111111/servers/59818cee-bc8c-44eb-8073-673ee65105f7",
+			"href": "https://dfw.servers.api.ttsubo2000cloud.com/v2/111111/servers/59818cee-bc8c-44eb-8073-673ee65105f7",
 			"rel":  "bookmark",
 		},
 	},
@@ -388,7 +388,7 @@ var PerilServer = os.Server{
 		"id": "bb02b1a3-bc77-4d17-ab5b-421d89850fca",
 		"links": []interface{}{
 			map[string]interface{}{
-				"href": "https://dfw.servers.api.rackspacecloud.com/111111/images/bb02b1a3-bc77-4d17-ab5b-421d89850fca",
+				"href": "https://dfw.servers.api.ttsubo2000cloud.com/111111/images/bb02b1a3-bc77-4d17-ab5b-421d89850fca",
 				"rel":  "bookmark",
 			},
 		},
@@ -397,7 +397,7 @@ var PerilServer = os.Server{
 		"id": "performance1-2",
 		"links": []interface{}{
 			map[string]interface{}{
-				"href": "https://dfw.servers.api.rackspacecloud.com/111111/flavors/performance1-2",
+				"href": "https://dfw.servers.api.ttsubo2000cloud.com/111111/flavors/performance1-2",
 				"rel":  "bookmark",
 			},
 		},
@@ -423,11 +423,11 @@ var PerilServer = os.Server{
 	Metadata: map[string]interface{}{},
 	Links: []interface{}{
 		map[string]interface{}{
-			"href": "https://dfw.servers.api.rackspacecloud.com/v2/111111/servers/25f1c7f5-e00a-4715-b355-16e24b2f4630",
+			"href": "https://dfw.servers.api.ttsubo2000cloud.com/v2/111111/servers/25f1c7f5-e00a-4715-b355-16e24b2f4630",
 			"rel":  "self",
 		},
 		map[string]interface{}{
-			"href": "https://dfw.servers.api.rackspacecloud.com/v2/111111/servers/25f1c7f5-e00a-4715-b355-16e24b2f4630",
+			"href": "https://dfw.servers.api.ttsubo2000cloud.com/v2/111111/servers/25f1c7f5-e00a-4715-b355-16e24b2f4630",
 			"rel":  "bookmark",
 		},
 	},
@@ -452,7 +452,7 @@ var GophercloudServer = os.Server{
 		"id": "e19a734c-c7e6-443a-830c-242209c4d65d",
 		"links": []interface{}{
 			map[string]interface{}{
-				"href": "https://dfw.servers.api.rackspacecloud.com/111111/images/e19a734c-c7e6-443a-830c-242209c4d65d",
+				"href": "https://dfw.servers.api.ttsubo2000cloud.com/111111/images/e19a734c-c7e6-443a-830c-242209c4d65d",
 				"rel":  "bookmark",
 			},
 		},
@@ -461,7 +461,7 @@ var GophercloudServer = os.Server{
 		"id": "performance1-1",
 		"links": []interface{}{
 			map[string]interface{}{
-				"href": "https://dfw.servers.api.rackspacecloud.com/111111/flavors/performance1-1",
+				"href": "https://dfw.servers.api.ttsubo2000cloud.com/111111/flavors/performance1-1",
 				"rel":  "bookmark",
 			},
 		},
@@ -487,11 +487,11 @@ var GophercloudServer = os.Server{
 	Metadata: map[string]interface{}{},
 	Links: []interface{}{
 		map[string]interface{}{
-			"href": "https://dfw.servers.api.rackspacecloud.com/v2/111111/servers/8c65cb68-0681-4c30-bc88-6b83a8a26aee",
+			"href": "https://dfw.servers.api.ttsubo2000cloud.com/v2/111111/servers/8c65cb68-0681-4c30-bc88-6b83a8a26aee",
 			"rel":  "self",
 		},
 		map[string]interface{}{
-			"href": "https://dfw.servers.api.rackspacecloud.com/111111/servers/8c65cb68-0681-4c30-bc88-6b83a8a26aee",
+			"href": "https://dfw.servers.api.ttsubo2000cloud.com/111111/servers/8c65cb68-0681-4c30-bc88-6b83a8a26aee",
 			"rel":  "bookmark",
 		},
 	},
@@ -516,7 +516,7 @@ var GophercloudUpdatedServer = os.Server{
 		"id": "e19a734c-c7e6-443a-830c-242209c4d65d",
 		"links": []interface{}{
 			map[string]interface{}{
-				"href": "https://dfw.servers.api.rackspacecloud.com/111111/images/e19a734c-c7e6-443a-830c-242209c4d65d",
+				"href": "https://dfw.servers.api.ttsubo2000cloud.com/111111/images/e19a734c-c7e6-443a-830c-242209c4d65d",
 				"rel":  "bookmark",
 			},
 		},
@@ -525,7 +525,7 @@ var GophercloudUpdatedServer = os.Server{
 		"id": "performance1-1",
 		"links": []interface{}{
 			map[string]interface{}{
-				"href": "https://dfw.servers.api.rackspacecloud.com/111111/flavors/performance1-1",
+				"href": "https://dfw.servers.api.ttsubo2000cloud.com/111111/flavors/performance1-1",
 				"rel":  "bookmark",
 			},
 		},
@@ -551,11 +551,11 @@ var GophercloudUpdatedServer = os.Server{
 	Metadata: map[string]interface{}{},
 	Links: []interface{}{
 		map[string]interface{}{
-			"href": "https://dfw.servers.api.rackspacecloud.com/v2/111111/servers/8c65cb68-0681-4c30-bc88-6b83a8a26aee",
+			"href": "https://dfw.servers.api.ttsubo2000cloud.com/v2/111111/servers/8c65cb68-0681-4c30-bc88-6b83a8a26aee",
 			"rel":  "self",
 		},
 		map[string]interface{}{
-			"href": "https://dfw.servers.api.rackspacecloud.com/111111/servers/8c65cb68-0681-4c30-bc88-6b83a8a26aee",
+			"href": "https://dfw.servers.api.ttsubo2000cloud.com/111111/servers/8c65cb68-0681-4c30-bc88-6b83a8a26aee",
 			"rel":  "bookmark",
 		},
 	},

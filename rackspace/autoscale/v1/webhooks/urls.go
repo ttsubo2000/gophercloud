@@ -1,6 +1,6 @@
 package webhooks
 
-import "github.com/rackspace/gophercloud"
+import "github.com/ttsubo2000/gophercloud"
 
 func listURL(c *gophercloud.ServiceClient, groupID, policyID string) string {
 	return c.ServiceURL("groups", groupID, "policies", policyID, "webhooks")

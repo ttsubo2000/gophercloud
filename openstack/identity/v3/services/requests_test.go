@@ -6,9 +6,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/rackspace/gophercloud/pagination"
-	"github.com/rackspace/gophercloud/testhelper"
-	"github.com/rackspace/gophercloud/testhelper/client"
+	"github.com/ttsubo2000/gophercloud/pagination"
+	"github.com/ttsubo2000/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud/testhelper/client"
 )
 
 func TestCreateSuccessful(t *testing.T) {

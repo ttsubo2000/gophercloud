@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"testing"
 
-	th "github.com/rackspace/gophercloud/testhelper"
-	"github.com/rackspace/gophercloud/testhelper/client"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud/testhelper/client"
 )
 
 func mockCreateBackupResponse(t *testing.T, id string) {

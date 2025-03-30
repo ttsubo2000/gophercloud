@@ -1,13 +1,13 @@
-// +build acceptance db rackspace
+// +build acceptance db ttsubo2000
 
 package v1
 
 import (
-	"github.com/rackspace/gophercloud/acceptance/tools"
-	db "github.com/rackspace/gophercloud/openstack/db/v1/databases"
-	os "github.com/rackspace/gophercloud/openstack/db/v1/users"
-	"github.com/rackspace/gophercloud/pagination"
-	"github.com/rackspace/gophercloud/rackspace/db/v1/users"
+	"github.com/ttsubo2000/gophercloud/acceptance/tools"
+	db "github.com/ttsubo2000/gophercloud/openstack/db/v1/databases"
+	os "github.com/ttsubo2000/gophercloud/openstack/db/v1/users"
+	"github.com/ttsubo2000/gophercloud/pagination"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/db/v1/users"
 )
 
 func (c *context) createUsers() {

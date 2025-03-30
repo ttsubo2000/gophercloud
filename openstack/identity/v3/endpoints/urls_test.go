@@ -3,7 +3,7 @@ package endpoints
 import (
 	"testing"
 
-	"github.com/rackspace/gophercloud"
+	"github.com/ttsubo2000/gophercloud"
 )
 
 func TestGetListURL(t *testing.T) {

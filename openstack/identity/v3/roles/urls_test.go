@@ -3,7 +3,7 @@ package roles
 import (
 	"testing"
 
-	"github.com/rackspace/gophercloud"
+	"github.com/ttsubo2000/gophercloud"
 )
 
 func TestListAssignmentsURL(t *testing.T) {

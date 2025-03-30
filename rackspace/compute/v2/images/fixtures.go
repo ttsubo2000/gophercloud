@@ -3,7 +3,7 @@
 package images
 
 import (
-	os "github.com/rackspace/gophercloud/openstack/compute/v2/images"
+	os "github.com/ttsubo2000/gophercloud/openstack/compute/v2/images"
 )
 
 // ListOutput is an example response from an /images/detail request.
@@ -17,15 +17,15 @@ const ListOutput = `
 			"id": "30aa010e-080e-4d4b-a7f9-09fc55b07d69",
 			"links": [
 				{
-					"href": "https://iad.servers.api.rackspacecloud.com/v2/111222/images/30aa010e-080e-4d4b-a7f9-09fc55b07d69",
+					"href": "https://iad.servers.api.ttsubo2000cloud.com/v2/111222/images/30aa010e-080e-4d4b-a7f9-09fc55b07d69",
 					"rel": "self"
 				},
 				{
-					"href": "https://iad.servers.api.rackspacecloud.com/111222/images/30aa010e-080e-4d4b-a7f9-09fc55b07d69",
+					"href": "https://iad.servers.api.ttsubo2000cloud.com/111222/images/30aa010e-080e-4d4b-a7f9-09fc55b07d69",
 					"rel": "bookmark"
 				},
 				{
-					"href": "https://iad.servers.api.rackspacecloud.com/111222/images/30aa010e-080e-4d4b-a7f9-09fc55b07d69",
+					"href": "https://iad.servers.api.ttsubo2000cloud.com/111222/images/30aa010e-080e-4d4b-a7f9-09fc55b07d69",
 					"rel": "alternate",
 					"type": "application/vnd.openstack.image"
 				}
@@ -33,18 +33,18 @@ const ListOutput = `
 			"metadata": {
 				"auto_disk_config": "disabled",
 				"cache_in_nova": "True",
-				"com.rackspace__1__build_core": "1",
-				"com.rackspace__1__build_managed": "1",
-				"com.rackspace__1__build_rackconnect": "1",
-				"com.rackspace__1__options": "0",
-				"com.rackspace__1__platform_target": "PublicCloud",
-				"com.rackspace__1__release_build_date": "2014-10-01_15-46-08",
-				"com.rackspace__1__release_id": "100",
-				"com.rackspace__1__release_version": "10",
-				"com.rackspace__1__source": "kickstart",
-				"com.rackspace__1__visible_core": "1",
-				"com.rackspace__1__visible_managed": "0",
-				"com.rackspace__1__visible_rackconnect": "0",
+				"com.ttsubo2000__1__build_core": "1",
+				"com.ttsubo2000__1__build_managed": "1",
+				"com.ttsubo2000__1__build_rackconnect": "1",
+				"com.ttsubo2000__1__options": "0",
+				"com.ttsubo2000__1__platform_target": "PublicCloud",
+				"com.ttsubo2000__1__release_build_date": "2014-10-01_15-46-08",
+				"com.ttsubo2000__1__release_id": "100",
+				"com.ttsubo2000__1__release_version": "10",
+				"com.ttsubo2000__1__source": "kickstart",
+				"com.ttsubo2000__1__visible_core": "1",
+				"com.ttsubo2000__1__visible_managed": "0",
+				"com.ttsubo2000__1__visible_rackconnect": "0",
 				"image_type": "base",
 				"org.openstack__1__architecture": "x64",
 				"org.openstack__1__os_distro": "org.archlinux",
@@ -67,15 +67,15 @@ const ListOutput = `
 			"id": "e19a734c-c7e6-443a-830c-242209c4d65d",
 			"links": [
 				{
-					"href": "https://iad.servers.api.rackspacecloud.com/v2/111222/images/e19a734c-c7e6-443a-830c-242209c4d65d",
+					"href": "https://iad.servers.api.ttsubo2000cloud.com/v2/111222/images/e19a734c-c7e6-443a-830c-242209c4d65d",
 					"rel": "self"
 				},
 				{
-					"href": "https://iad.servers.api.rackspacecloud.com/111222/images/e19a734c-c7e6-443a-830c-242209c4d65d",
+					"href": "https://iad.servers.api.ttsubo2000cloud.com/111222/images/e19a734c-c7e6-443a-830c-242209c4d65d",
 					"rel": "bookmark"
 				},
 				{
-					"href": "https://iad.servers.api.rackspacecloud.com/111222/images/e19a734c-c7e6-443a-830c-242209c4d65d",
+					"href": "https://iad.servers.api.ttsubo2000cloud.com/111222/images/e19a734c-c7e6-443a-830c-242209c4d65d",
 					"rel": "alternate",
 					"type": "application/vnd.openstack.image"
 				}
@@ -83,18 +83,18 @@ const ListOutput = `
 			"metadata": {
 				"auto_disk_config": "True",
 				"cache_in_nova": "True",
-				"com.rackspace__1__build_core": "1",
-				"com.rackspace__1__build_managed": "1",
-				"com.rackspace__1__build_rackconnect": "1",
-				"com.rackspace__1__options": "0",
-				"com.rackspace__1__platform_target": "PublicCloud",
-				"com.rackspace__1__release_build_date": "2014-10-01_12-31-03",
-				"com.rackspace__1__release_id": "1007",
-				"com.rackspace__1__release_version": "6",
-				"com.rackspace__1__source": "kickstart",
-				"com.rackspace__1__visible_core": "1",
-				"com.rackspace__1__visible_managed": "1",
-				"com.rackspace__1__visible_rackconnect": "1",
+				"com.ttsubo2000__1__build_core": "1",
+				"com.ttsubo2000__1__build_managed": "1",
+				"com.ttsubo2000__1__build_rackconnect": "1",
+				"com.ttsubo2000__1__options": "0",
+				"com.ttsubo2000__1__platform_target": "PublicCloud",
+				"com.ttsubo2000__1__release_build_date": "2014-10-01_12-31-03",
+				"com.ttsubo2000__1__release_id": "1007",
+				"com.ttsubo2000__1__release_version": "6",
+				"com.ttsubo2000__1__source": "kickstart",
+				"com.ttsubo2000__1__visible_core": "1",
+				"com.ttsubo2000__1__visible_managed": "1",
+				"com.ttsubo2000__1__visible_rackconnect": "1",
 				"image_type": "base",
 				"org.openstack__1__architecture": "x64",
 				"org.openstack__1__os_distro": "com.ubuntu",
@@ -124,15 +124,15 @@ const GetOutput = `
 		"id": "e19a734c-c7e6-443a-830c-242209c4d65d",
 		"links": [
 			{
-				"href": "https://iad.servers.api.rackspacecloud.com/v2/111222/images/e19a734c-c7e6-443a-830c-242209c4d65d",
+				"href": "https://iad.servers.api.ttsubo2000cloud.com/v2/111222/images/e19a734c-c7e6-443a-830c-242209c4d65d",
 				"rel": "self"
 			},
 			{
-				"href": "https://iad.servers.api.rackspacecloud.com/111222/images/e19a734c-c7e6-443a-830c-242209c4d65d",
+				"href": "https://iad.servers.api.ttsubo2000cloud.com/111222/images/e19a734c-c7e6-443a-830c-242209c4d65d",
 				"rel": "bookmark"
 			},
 			{
-				"href": "https://iad.servers.api.rackspacecloud.com/111222/images/e19a734c-c7e6-443a-830c-242209c4d65d",
+				"href": "https://iad.servers.api.ttsubo2000cloud.com/111222/images/e19a734c-c7e6-443a-830c-242209c4d65d",
 				"rel": "alternate",
 				"type": "application/vnd.openstack.image"
 			}
@@ -140,18 +140,18 @@ const GetOutput = `
 		"metadata": {
 			"auto_disk_config": "True",
 			"cache_in_nova": "True",
-			"com.rackspace__1__build_core": "1",
-			"com.rackspace__1__build_managed": "1",
-			"com.rackspace__1__build_rackconnect": "1",
-			"com.rackspace__1__options": "0",
-			"com.rackspace__1__platform_target": "PublicCloud",
-			"com.rackspace__1__release_build_date": "2014-10-01_12-31-03",
-			"com.rackspace__1__release_id": "1007",
-			"com.rackspace__1__release_version": "6",
-			"com.rackspace__1__source": "kickstart",
-			"com.rackspace__1__visible_core": "1",
-			"com.rackspace__1__visible_managed": "1",
-			"com.rackspace__1__visible_rackconnect": "1",
+			"com.ttsubo2000__1__build_core": "1",
+			"com.ttsubo2000__1__build_managed": "1",
+			"com.ttsubo2000__1__build_rackconnect": "1",
+			"com.ttsubo2000__1__options": "0",
+			"com.ttsubo2000__1__platform_target": "PublicCloud",
+			"com.ttsubo2000__1__release_build_date": "2014-10-01_12-31-03",
+			"com.ttsubo2000__1__release_id": "1007",
+			"com.ttsubo2000__1__release_version": "6",
+			"com.ttsubo2000__1__source": "kickstart",
+			"com.ttsubo2000__1__visible_core": "1",
+			"com.ttsubo2000__1__visible_managed": "1",
+			"com.ttsubo2000__1__visible_rackconnect": "1",
 			"image_type": "base",
 			"org.openstack__1__architecture": "x64",
 			"org.openstack__1__os_distro": "com.ubuntu",
@@ -183,18 +183,18 @@ var ArchImage = os.Image{
 	Metadata: map[string]string{
 		"auto_disk_config":                      "True",
 		"cache_in_nova":                         "True",
-		"com.rackspace__1__build_core":          "1",
-		"com.rackspace__1__build_managed":       "1",
-		"com.rackspace__1__build_rackconnect":   "1",
-		"com.rackspace__1__options":             "0",
-		"com.rackspace__1__platform_target":     "PublicCloud",
-		"com.rackspace__1__release_build_date":  "2014-10-01_12-31-03",
-		"com.rackspace__1__release_id":          "1007",
-		"com.rackspace__1__release_version":     "6",
-		"com.rackspace__1__source":              "kickstart",
-		"com.rackspace__1__visible_core":        "1",
-		"com.rackspace__1__visible_managed":     "1",
-		"com.rackspace__1__visible_rackconnect": "1",
+		"com.ttsubo2000__1__build_core":          "1",
+		"com.ttsubo2000__1__build_managed":       "1",
+		"com.ttsubo2000__1__build_rackconnect":   "1",
+		"com.ttsubo2000__1__options":             "0",
+		"com.ttsubo2000__1__platform_target":     "PublicCloud",
+		"com.ttsubo2000__1__release_build_date":  "2014-10-01_12-31-03",
+		"com.ttsubo2000__1__release_id":          "1007",
+		"com.ttsubo2000__1__release_version":     "6",
+		"com.ttsubo2000__1__source":              "kickstart",
+		"com.ttsubo2000__1__visible_core":        "1",
+		"com.ttsubo2000__1__visible_managed":     "1",
+		"com.ttsubo2000__1__visible_rackconnect": "1",
 		"image_type":                            "base",
 		"org.openstack__1__architecture":        "x64",
 		"org.openstack__1__os_distro":           "com.ubuntu",
@@ -219,18 +219,18 @@ var UbuntuImage = os.Image{
 	Metadata: map[string]string{
 		"auto_disk_config":                      "True",
 		"cache_in_nova":                         "True",
-		"com.rackspace__1__build_core":          "1",
-		"com.rackspace__1__build_managed":       "1",
-		"com.rackspace__1__build_rackconnect":   "1",
-		"com.rackspace__1__options":             "0",
-		"com.rackspace__1__platform_target":     "PublicCloud",
-		"com.rackspace__1__release_build_date":  "2014-10-01_12-31-03",
-		"com.rackspace__1__release_id":          "1007",
-		"com.rackspace__1__release_version":     "6",
-		"com.rackspace__1__source":              "kickstart",
-		"com.rackspace__1__visible_core":        "1",
-		"com.rackspace__1__visible_managed":     "1",
-		"com.rackspace__1__visible_rackconnect": "1",
+		"com.ttsubo2000__1__build_core":          "1",
+		"com.ttsubo2000__1__build_managed":       "1",
+		"com.ttsubo2000__1__build_rackconnect":   "1",
+		"com.ttsubo2000__1__options":             "0",
+		"com.ttsubo2000__1__platform_target":     "PublicCloud",
+		"com.ttsubo2000__1__release_build_date":  "2014-10-01_12-31-03",
+		"com.ttsubo2000__1__release_id":          "1007",
+		"com.ttsubo2000__1__release_version":     "6",
+		"com.ttsubo2000__1__source":              "kickstart",
+		"com.ttsubo2000__1__visible_core":        "1",
+		"com.ttsubo2000__1__visible_managed":     "1",
+		"com.ttsubo2000__1__visible_rackconnect": "1",
 		"image_type":                            "base",
 		"org.openstack__1__architecture":        "x64",
 		"org.openstack__1__os_distro":           "com.ubuntu",

@@ -1,6 +1,6 @@
 package policies
 
-import "github.com/rackspace/gophercloud"
+import "github.com/ttsubo2000/gophercloud"
 
 func listURL(c *gophercloud.ServiceClient, groupID string) string {
 	return c.ServiceURL("groups", groupID, "policies")

@@ -5,8 +5,8 @@ package v3
 import (
 	"testing"
 
-	"github.com/rackspace/gophercloud/openstack"
-	tokens3 "github.com/rackspace/gophercloud/openstack/identity/v3/tokens"
+	"github.com/ttsubo2000/gophercloud/openstack"
+	tokens3 "github.com/ttsubo2000/gophercloud/openstack/identity/v3/tokens"
 )
 
 func TestGetToken(t *testing.T) {

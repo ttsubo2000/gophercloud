@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"testing"
 
-	th "github.com/rackspace/gophercloud/testhelper"
-	fake "github.com/rackspace/gophercloud/testhelper/client"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
+	fake "github.com/ttsubo2000/gophercloud/testhelper/client"
 )
 
 func mockListLBResponse(t *testing.T) {
@@ -117,7 +117,7 @@ func mockCreateLBResponse(t *testing.T) {
     "status": "BUILD",
     "timeout": 30,
     "cluster": {
-      "name": "ztm-n01.staging1.lbaas.rackspace.net"
+      "name": "ztm-n01.staging1.lbaas.ttsubo2000.net"
     },
     "nodes": [
       {

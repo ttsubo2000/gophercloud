@@ -9,7 +9,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/rackspace/gophercloud"
+	"github.com/ttsubo2000/gophercloud"
 )
 
 // ErrTimeout is returned if WaitFor takes longer than 300 second to happen.

@@ -3,7 +3,7 @@ package monitors
 import (
 	"errors"
 
-	"github.com/rackspace/gophercloud"
+	"github.com/ttsubo2000/gophercloud"
 )
 
 var (

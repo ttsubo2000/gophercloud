@@ -3,10 +3,10 @@ package cdncontainers
 import (
 	"testing"
 
-	os "github.com/rackspace/gophercloud/openstack/objectstorage/v1/containers"
-	"github.com/rackspace/gophercloud/pagination"
-	th "github.com/rackspace/gophercloud/testhelper"
-	fake "github.com/rackspace/gophercloud/testhelper/client"
+	os "github.com/ttsubo2000/gophercloud/openstack/objectstorage/v1/containers"
+	"github.com/ttsubo2000/gophercloud/pagination"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
+	fake "github.com/ttsubo2000/gophercloud/testhelper/client"
 )
 
 func TestListCDNContainers(t *testing.T) {

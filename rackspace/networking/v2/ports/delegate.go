@@ -1,9 +1,9 @@
 package ports
 
 import (
-	"github.com/rackspace/gophercloud"
-	os "github.com/rackspace/gophercloud/openstack/networking/v2/ports"
-	"github.com/rackspace/gophercloud/pagination"
+	"github.com/ttsubo2000/gophercloud"
+	os "github.com/ttsubo2000/gophercloud/openstack/networking/v2/ports"
+	"github.com/ttsubo2000/gophercloud/pagination"
 )
 
 // List returns a Pager which allows you to iterate over a collection of
@@ -26,7 +26,7 @@ func Get(c *gophercloud.ServiceClient, networkID string) os.GetResult {
 // provided. You must remember to provide a NetworkID value.
 //
 // NOTE: Currently the SecurityGroup option is not implemented to work with
-// Rackspace.
+// ttsubo2000.
 func Create(c *gophercloud.ServiceClient, opts os.CreateOptsBuilder) os.CreateResult {
 	return os.Create(c, opts)
 }

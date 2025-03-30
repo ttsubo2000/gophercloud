@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	th "github.com/rackspace/gophercloud/testhelper"
-	"github.com/rackspace/gophercloud/testhelper/client"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud/testhelper/client"
 )
 
 // PolicyListBody contains the canned body of a policies.List response.
@@ -21,7 +21,7 @@ const PolicyListBody = `
       "name": "webhook policy",
       "links": [
         {
-          "href": "https://dfw.autoscale.api.rackspacecloud.com/v1.0/123456/groups/60b15dad-5ea1-43fa-9a12-a1d737b4da07/policies/2b48d247-0282-4b9d-8775-5c4b67e8e649/",
+          "href": "https://dfw.autoscale.api.ttsubo2000cloud.com/v1.0/123456/groups/60b15dad-5ea1-43fa-9a12-a1d737b4da07/policies/2b48d247-0282-4b9d-8775-5c4b67e8e649/",
           "rel": "self"
         }
       ],
@@ -35,7 +35,7 @@ const PolicyListBody = `
       "name": "one time",
       "links": [
         {
-          "href": "https://dfw.autoscale.api.rackspacecloud.com/v1.0/123456/groups/60b15dad-5ea1-43fa-9a12-a1d737b4da07/policies/c175c31e-65f9-41de-8b15-918420d3253e/",
+          "href": "https://dfw.autoscale.api.ttsubo2000cloud.com/v1.0/123456/groups/60b15dad-5ea1-43fa-9a12-a1d737b4da07/policies/c175c31e-65f9-41de-8b15-918420d3253e/",
           "rel": "self"
         }
       ],
@@ -51,7 +51,7 @@ const PolicyListBody = `
       "name": "sunday afternoon",
       "links": [
         {
-          "href": "https://dfw.autoscale.api.rackspacecloud.com/v1.0/123456/groups/60b15dad-5ea1-43fa-9a12-a1d737b4da07/policies/e785e3e7-af9e-4f3c-99ae-b80a532e1663/",
+          "href": "https://dfw.autoscale.api.ttsubo2000cloud.com/v1.0/123456/groups/60b15dad-5ea1-43fa-9a12-a1d737b4da07/policies/e785e3e7-af9e-4f3c-99ae-b80a532e1663/",
           "rel": "self"
         }
       ],
@@ -106,7 +106,7 @@ const PolicyGetBody = `
     "name": "webhook policy",
     "links": [
       {
-        "href": "https://dfw.autoscale.api.rackspacecloud.com/v1.0/123456/groups/60b15dad-5ea1-43fa-9a12-a1d737b4da07/policies/2b48d247-0282-4b9d-8775-5c4b67e8e649/",
+        "href": "https://dfw.autoscale.api.ttsubo2000cloud.com/v1.0/123456/groups/60b15dad-5ea1-43fa-9a12-a1d737b4da07/policies/2b48d247-0282-4b9d-8775-5c4b67e8e649/",
         "rel": "self"
       }
     ],

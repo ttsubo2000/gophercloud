@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"testing"
 
-	th "github.com/rackspace/gophercloud/testhelper"
-	fake "github.com/rackspace/gophercloud/testhelper/client"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
+	fake "github.com/ttsubo2000/gophercloud/testhelper/client"
 )
 
 func _rootURL(lbID int) string {
@@ -235,7 +235,7 @@ func mockListEventsResponse(t *testing.T, lbID int) {
       "accountId": 406271,
       "loadbalancerId": 323,
       "title": "Node Status Updated",
-      "author": "Rackspace Cloud",
+      "author": "ttsubo2000 Cloud",
       "created": "10-30-2012 10:18:23"
     }
   ]

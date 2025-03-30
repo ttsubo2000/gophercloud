@@ -4,14 +4,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/pagination"
-	"github.com/rackspace/gophercloud/rackspace/lb/v1/nodes"
-	"github.com/rackspace/gophercloud/rackspace/lb/v1/sessions"
-	"github.com/rackspace/gophercloud/rackspace/lb/v1/throttle"
-	"github.com/rackspace/gophercloud/rackspace/lb/v1/vips"
-	th "github.com/rackspace/gophercloud/testhelper"
-	"github.com/rackspace/gophercloud/testhelper/client"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/pagination"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/lb/v1/nodes"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/lb/v1/sessions"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/lb/v1/throttle"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/lb/v1/vips"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud/testhelper/client"
 )
 
 const (
@@ -116,7 +116,7 @@ func TestCreate(t *testing.T) {
 		Algorithm:  "RANDOM",
 		Status:     BUILD,
 		Timeout:    30,
-		Cluster:    Cluster{Name: "ztm-n01.staging1.lbaas.rackspace.net"},
+		Cluster:    Cluster{Name: "ztm-n01.staging1.lbaas.ttsubo2000.net"},
 		Nodes: []nodes.Node{
 			nodes.Node{
 				Address:   "10.1.1.1",

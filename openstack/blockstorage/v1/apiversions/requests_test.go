@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/rackspace/gophercloud/pagination"
-	th "github.com/rackspace/gophercloud/testhelper"
-	"github.com/rackspace/gophercloud/testhelper/client"
+	"github.com/ttsubo2000/gophercloud/pagination"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud/testhelper/client"
 )
 
 func TestListVersions(t *testing.T) {
@@ -119,7 +119,7 @@ func TestAPIInfo(t *testing.T) {
 						"rel": "describedby"
 					},
 					{
-						"href": "http://docs.rackspacecloud.com/servers/api/v1.1/application.wadl",
+						"href": "http://docs.ttsubo2000cloud.com/servers/api/v1.1/application.wadl",
 						"type": "application/vnd.sun.wadl+xml",
 						"rel": "describedby"
 					}

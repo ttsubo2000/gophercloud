@@ -1,6 +1,6 @@
 /*
 Package vips provides information and interaction with the Virtual IP API
-resource for the Rackspace Cloud Load Balancer service.
+resource for the ttsubo2000 Cloud Load Balancer service.
 
 A virtual IP (VIP) makes a load balancer accessible by clients. The load
 balancing service supports either a public VIP, routable on the public Internet,

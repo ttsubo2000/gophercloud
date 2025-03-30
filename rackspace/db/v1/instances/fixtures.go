@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/openstack/db/v1/datastores"
-	"github.com/rackspace/gophercloud/openstack/db/v1/flavors"
-	os "github.com/rackspace/gophercloud/openstack/db/v1/instances"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/openstack/db/v1/datastores"
+	"github.com/ttsubo2000/gophercloud/openstack/db/v1/flavors"
+	os "github.com/ttsubo2000/gophercloud/openstack/db/v1/instances"
 )
 
 var (
@@ -28,22 +28,22 @@ var instance = `
     "id": "1",
     "links": [
       {
-        "href": "https://ord.databases.api.rackspacecloud.com/v1.0/1234/flavors/1",
+        "href": "https://ord.databases.api.ttsubo2000cloud.com/v1.0/1234/flavors/1",
         "rel": "self"
       },
       {
-        "href": "https://ord.databases.api.rackspacecloud.com/v1.0/1234/flavors/1",
+        "href": "https://ord.databases.api.ttsubo2000cloud.com/v1.0/1234/flavors/1",
         "rel": "bookmark"
       }
     ]
   },
   "links": [
     {
-      "href": "https://ord.databases.api.rackspacecloud.com/v1.0/1234/flavors/1",
+      "href": "https://ord.databases.api.ttsubo2000cloud.com/v1.0/1234/flavors/1",
       "rel": "self"
     }
   ],
-  "hostname": "e09ad9a3f73309469cf1f43d11e79549caf9acf2.rackspaceclouddb.com",
+  "hostname": "e09ad9a3f73309469cf1f43d11e79549caf9acf2.ttsubo2000clouddb.com",
   "id": "{instanceID}",
   "name": "json_rack_instance",
   "status": "BUILD",
@@ -111,11 +111,11 @@ var createReplicaResp = `
     "name": "t2s1_ALT_GUEST",
     "links": [
       {
-        "href": "https://ord.databases.api.rackspacecloud.com/v1.0/5919009/instances/8367c312-7c40-4a66-aab1-5767478914fc",
+        "href": "https://ord.databases.api.ttsubo2000cloud.com/v1.0/5919009/instances/8367c312-7c40-4a66-aab1-5767478914fc",
         "rel": "self"
       },
       {
-        "href": "https://ord.databases.api.rackspacecloud.com/instances/8367c312-7c40-4a66-aab1-5767478914fc",
+        "href": "https://ord.databases.api.ttsubo2000cloud.com/instances/8367c312-7c40-4a66-aab1-5767478914fc",
         "rel": "bookmark"
       }
     ],
@@ -146,11 +146,11 @@ var listReplicasResp = `
       "name": "t1s1_ALT_GUEST",
       "links": [
         {
-          "href": "https://ord.databases.api.rackspacecloud.com/v1.0/1234/instances/3c691f06-bf9a-4618-b7ec-2817ce0cf254",
+          "href": "https://ord.databases.api.ttsubo2000cloud.com/v1.0/1234/instances/3c691f06-bf9a-4618-b7ec-2817ce0cf254",
           "rel": "self"
         },
         {
-          "href": "https://ord.databases.api.rackspacecloud.com/instances/3c691f06-bf9a-4618-b7ec-2817ce0cf254",
+          "href": "https://ord.databases.api.ttsubo2000cloud.com/instances/3c691f06-bf9a-4618-b7ec-2817ce0cf254",
           "rel": "bookmark"
         }
       ],
@@ -309,14 +309,14 @@ var expectedInstance = &Instance{
 	Flavor: flavors.Flavor{
 		ID: "1",
 		Links: []gophercloud.Link{
-			gophercloud.Link{Href: "https://ord.databases.api.rackspacecloud.com/v1.0/1234/flavors/1", Rel: "self"},
-			gophercloud.Link{Href: "https://ord.databases.api.rackspacecloud.com/v1.0/1234/flavors/1", Rel: "bookmark"},
+			gophercloud.Link{Href: "https://ord.databases.api.ttsubo2000cloud.com/v1.0/1234/flavors/1", Rel: "self"},
+			gophercloud.Link{Href: "https://ord.databases.api.ttsubo2000cloud.com/v1.0/1234/flavors/1", Rel: "bookmark"},
 		},
 	},
-	Hostname: "e09ad9a3f73309469cf1f43d11e79549caf9acf2.rackspaceclouddb.com",
+	Hostname: "e09ad9a3f73309469cf1f43d11e79549caf9acf2.ttsubo2000clouddb.com",
 	ID:       instanceID,
 	Links: []gophercloud.Link{
-		gophercloud.Link{Href: "https://ord.databases.api.rackspacecloud.com/v1.0/1234/flavors/1", Rel: "self"},
+		gophercloud.Link{Href: "https://ord.databases.api.ttsubo2000cloud.com/v1.0/1234/flavors/1", Rel: "self"},
 	},
 	Name:   "json_rack_instance",
 	Status: "BUILD",
@@ -328,8 +328,8 @@ var expectedReplica = &Instance{
 	Updated: timeVal,
 	Name:    "t2s1_ALT_GUEST",
 	Links: []gophercloud.Link{
-		gophercloud.Link{Rel: "self", Href: "https://ord.databases.api.rackspacecloud.com/v1.0/5919009/instances/8367c312-7c40-4a66-aab1-5767478914fc"},
-		gophercloud.Link{Rel: "bookmark", Href: "https://ord.databases.api.rackspacecloud.com/instances/8367c312-7c40-4a66-aab1-5767478914fc"},
+		gophercloud.Link{Rel: "self", Href: "https://ord.databases.api.ttsubo2000cloud.com/v1.0/5919009/instances/8367c312-7c40-4a66-aab1-5767478914fc"},
+		gophercloud.Link{Rel: "bookmark", Href: "https://ord.databases.api.ttsubo2000cloud.com/instances/8367c312-7c40-4a66-aab1-5767478914fc"},
 	},
 	Created:   timeVal,
 	ID:        "8367c312-7c40-4a66-aab1-5767478914fc",

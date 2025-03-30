@@ -1,7 +1,7 @@
 package quotasets
 
 import (
-	"github.com/rackspace/gophercloud"
+	"github.com/ttsubo2000/gophercloud"
 )
 
 // Get returns public data about a previously created QuotaSet.

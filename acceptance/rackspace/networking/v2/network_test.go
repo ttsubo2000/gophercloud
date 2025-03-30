@@ -6,10 +6,10 @@ import (
 	"strconv"
 	"testing"
 
-	os "github.com/rackspace/gophercloud/openstack/networking/v2/networks"
-	"github.com/rackspace/gophercloud/pagination"
-	"github.com/rackspace/gophercloud/rackspace/networking/v2/networks"
-	th "github.com/rackspace/gophercloud/testhelper"
+	os "github.com/ttsubo2000/gophercloud/openstack/networking/v2/networks"
+	"github.com/ttsubo2000/gophercloud/pagination"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/networking/v2/networks"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
 )
 
 func TestNetworkCRUDOperations(t *testing.T) {

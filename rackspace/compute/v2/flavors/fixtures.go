@@ -19,11 +19,11 @@ const ListOutput = `
       "id": "performance1-1",
       "links": [
         {
-          "href": "https://iad.servers.api.rackspacecloud.com/v2/864477/flavors/performance1-1",
+          "href": "https://iad.servers.api.ttsubo2000cloud.com/v2/864477/flavors/performance1-1",
           "rel": "self"
         },
         {
-          "href": "https://iad.servers.api.rackspacecloud.com/864477/flavors/performance1-1",
+          "href": "https://iad.servers.api.ttsubo2000cloud.com/864477/flavors/performance1-1",
           "rel": "bookmark"
         }
       ],
@@ -46,11 +46,11 @@ const ListOutput = `
       "id": "performance1-2",
       "links": [
         {
-          "href": "https://iad.servers.api.rackspacecloud.com/v2/864477/flavors/performance1-2",
+          "href": "https://iad.servers.api.ttsubo2000cloud.com/v2/864477/flavors/performance1-2",
           "rel": "self"
         },
         {
-          "href": "https://iad.servers.api.rackspacecloud.com/864477/flavors/performance1-2",
+          "href": "https://iad.servers.api.ttsubo2000cloud.com/864477/flavors/performance1-2",
           "rel": "bookmark"
         }
       ],
@@ -80,11 +80,11 @@ const GetOutput = `
     "id": "performance1-1",
     "links": [
       {
-        "href": "https://iad.servers.api.rackspacecloud.com/v2/864477/flavors/performance1-1",
+        "href": "https://iad.servers.api.ttsubo2000cloud.com/v2/864477/flavors/performance1-1",
         "rel": "self"
       },
       {
-        "href": "https://iad.servers.api.rackspacecloud.com/864477/flavors/performance1-1",
+        "href": "https://iad.servers.api.ttsubo2000cloud.com/864477/flavors/performance1-1",
         "rel": "bookmark"
       }
     ],

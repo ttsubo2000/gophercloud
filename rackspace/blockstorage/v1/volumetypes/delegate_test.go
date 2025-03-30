@@ -3,10 +3,10 @@ package volumetypes
 import (
 	"testing"
 
-	os "github.com/rackspace/gophercloud/openstack/blockstorage/v1/volumetypes"
-	"github.com/rackspace/gophercloud/pagination"
-	th "github.com/rackspace/gophercloud/testhelper"
-	fake "github.com/rackspace/gophercloud/testhelper/client"
+	os "github.com/ttsubo2000/gophercloud/openstack/blockstorage/v1/volumetypes"
+	"github.com/ttsubo2000/gophercloud/pagination"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
+	fake "github.com/ttsubo2000/gophercloud/testhelper/client"
 )
 
 func TestList(t *testing.T) {

@@ -3,10 +3,10 @@ package nodes
 import (
 	"testing"
 
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/pagination"
-	th "github.com/rackspace/gophercloud/testhelper"
-	"github.com/rackspace/gophercloud/testhelper/client"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/pagination"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud/testhelper/client"
 )
 
 const (
@@ -228,7 +228,7 @@ func TestListEvents(t *testing.T) {
 				AccountID:       406271,
 				LoadBalancerID:  323,
 				Title:           "Node Status Updated",
-				Author:          "Rackspace Cloud",
+				Author:          "ttsubo2000 Cloud",
 				Created:         "10-30-2012 10:18:23",
 			},
 		}

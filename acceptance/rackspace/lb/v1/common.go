@@ -8,20 +8,20 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/acceptance/tools"
-	"github.com/rackspace/gophercloud/rackspace"
-	th "github.com/rackspace/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/acceptance/tools"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
 )
 
 func newProvider() (*gophercloud.ProviderClient, error) {
-	opts, err := rackspace.AuthOptionsFromEnv()
+	opts, err := ttsubo2000.AuthOptionsFromEnv()
 	if err != nil {
 		return nil, err
 	}
 	opts = tools.OnlyRS(opts)
 
-	return rackspace.AuthenticatedClient(opts)
+	return ttsubo2000.AuthenticatedClient(opts)
 }
 
 func newClient() (*gophercloud.ServiceClient, error) {
@@ -30,7 +30,7 @@ func newClient() (*gophercloud.ServiceClient, error) {
 		return nil, err
 	}
 
-	return rackspace.NewLBV1(provider, gophercloud.EndpointOpts{
+	return ttsubo2000.NewLBV1(provider, gophercloud.EndpointOpts{
 		Region: os.Getenv("RS_REGION"),
 	})
 }
@@ -41,7 +41,7 @@ func newComputeClient() (*gophercloud.ServiceClient, error) {
 		return nil, err
 	}
 
-	return rackspace.NewComputeV2(provider, gophercloud.EndpointOpts{
+	return ttsubo2000.NewComputeV2(provider, gophercloud.EndpointOpts{
 		Region: os.Getenv("RS_REGION"),
 	})
 }

@@ -3,7 +3,7 @@ package sessions
 import (
 	"strconv"
 
-	"github.com/rackspace/gophercloud"
+	"github.com/ttsubo2000/gophercloud"
 )
 
 const (

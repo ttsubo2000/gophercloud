@@ -1,12 +1,12 @@
-// +build acceptance rackspace objectstorage v1
+// +build acceptance ttsubo2000 objectstorage v1
 
 package v1
 
 import (
 	"testing"
 
-	"github.com/rackspace/gophercloud/rackspace/objectstorage/v1/bulk"
-	th "github.com/rackspace/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/objectstorage/v1/bulk"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
 )
 
 func TestBulk(t *testing.T) {

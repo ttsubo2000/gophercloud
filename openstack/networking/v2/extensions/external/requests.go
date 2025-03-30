@@ -3,7 +3,7 @@ package external
 import (
 	"time"
 
-	"github.com/rackspace/gophercloud/openstack/networking/v2/networks"
+	"github.com/ttsubo2000/gophercloud/openstack/networking/v2/networks"
 )
 
 // AdminState gives users a solid type to work with for create and update

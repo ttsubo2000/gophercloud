@@ -3,8 +3,8 @@ package tokens
 import (
 	"errors"
 
-	"github.com/rackspace/gophercloud"
-	os "github.com/rackspace/gophercloud/openstack/identity/v2/tokens"
+	"github.com/ttsubo2000/gophercloud"
+	os "github.com/ttsubo2000/gophercloud/openstack/identity/v2/tokens"
 )
 
 var (
@@ -52,9 +52,9 @@ func (auth AuthOptions) ToTokenCreateMap() (map[string]interface{}, error) {
 	return map[string]interface{}{"auth": authMap}, nil
 }
 
-// Create authenticates to Rackspace's identity service and attempts to acquire a Token. Rather
+// Create authenticates to ttsubo2000's identity service and attempts to acquire a Token. Rather
 // than interact with this service directly, users should generally call
-// rackspace.AuthenticatedClient().
+// ttsubo2000.AuthenticatedClient().
 func Create(client *gophercloud.ServiceClient, auth AuthOptions) os.CreateResult {
 	return os.Create(client, auth)
 }

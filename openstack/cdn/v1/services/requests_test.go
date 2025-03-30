@@ -3,10 +3,10 @@ package services
 import (
 	"testing"
 
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/pagination"
-	th "github.com/rackspace/gophercloud/testhelper"
-	fake "github.com/rackspace/gophercloud/testhelper/client"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/pagination"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
+	fake "github.com/ttsubo2000/gophercloud/testhelper/client"
 )
 
 func TestList(t *testing.T) {
@@ -202,7 +202,7 @@ func TestCreate(t *testing.T) {
 		FlavorID: "cdn",
 	}
 
-	expected := "https://global.cdn.api.rackspacecloud.com/v1.0/services/96737ae3-cfc1-4c72-be88-5d0e7cc9a3f0"
+	expected := "https://global.cdn.api.ttsubo2000cloud.com/v1.0/services/96737ae3-cfc1-4c72-be88-5d0e7cc9a3f0"
 	actual, err := Create(fake.ServiceClient(), createOpts).Extract()
 	th.AssertNoErr(t, err)
 	th.AssertEquals(t, expected, actual)
@@ -272,7 +272,7 @@ func TestGet(t *testing.T) {
 		Errors:   []Error{},
 		Links: []gophercloud.Link{
 			gophercloud.Link{
-				Href: "https://global.cdn.api.rackspacecloud.com/v1.0/110011/services/96737ae3-cfc1-4c72-be88-5d0e7cc9a3f0",
+				Href: "https://global.cdn.api.ttsubo2000cloud.com/v1.0/110011/services/96737ae3-cfc1-4c72-be88-5d0e7cc9a3f0",
 				Rel:  "self",
 			},
 			gophercloud.Link{
@@ -280,7 +280,7 @@ func TestGet(t *testing.T) {
 				Rel:  "access_url",
 			},
 			gophercloud.Link{
-				Href: "https://global.cdn.api.rackspacecloud.com/v1.0/110011/flavors/cdn",
+				Href: "https://global.cdn.api.ttsubo2000cloud.com/v1.0/110011/flavors/cdn",
 				Rel:  "flavor",
 			},
 		},

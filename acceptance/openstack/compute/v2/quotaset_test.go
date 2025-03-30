@@ -5,12 +5,12 @@ package v2
 import (
 	"testing"
 
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/openstack"
-	"github.com/rackspace/gophercloud/openstack/compute/v2/extensions/quotasets"
-	"github.com/rackspace/gophercloud/openstack/identity/v2/tenants"
-	"github.com/rackspace/gophercloud/pagination"
-	th "github.com/rackspace/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/openstack"
+	"github.com/ttsubo2000/gophercloud/openstack/compute/v2/extensions/quotasets"
+	"github.com/ttsubo2000/gophercloud/openstack/identity/v2/tenants"
+	"github.com/ttsubo2000/gophercloud/pagination"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
 )
 
 func TestGetQuotaset(t *testing.T) {

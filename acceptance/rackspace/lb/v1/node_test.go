@@ -6,14 +6,14 @@ import (
 	"os"
 	"testing"
 
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/acceptance/tools"
-	"github.com/rackspace/gophercloud/openstack/compute/v2/extensions/diskconfig"
-	"github.com/rackspace/gophercloud/pagination"
-	"github.com/rackspace/gophercloud/rackspace/compute/v2/servers"
-	"github.com/rackspace/gophercloud/rackspace/lb/v1/lbs"
-	"github.com/rackspace/gophercloud/rackspace/lb/v1/nodes"
-	th "github.com/rackspace/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/acceptance/tools"
+	"github.com/ttsubo2000/gophercloud/openstack/compute/v2/extensions/diskconfig"
+	"github.com/ttsubo2000/gophercloud/pagination"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/compute/v2/servers"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/lb/v1/lbs"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/lb/v1/nodes"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
 )
 
 func TestNodes(t *testing.T) {

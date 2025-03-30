@@ -3,7 +3,7 @@ package stacktemplates
 import (
 	"encoding/json"
 	"github.com/mitchellh/mapstructure"
-	"github.com/rackspace/gophercloud"
+	"github.com/ttsubo2000/gophercloud"
 )
 
 // GetResult represents the result of a Get operation.

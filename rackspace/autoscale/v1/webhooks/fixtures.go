@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/rackspace/gophercloud"
-	th "github.com/rackspace/gophercloud/testhelper"
-	"github.com/rackspace/gophercloud/testhelper/client"
+	"github.com/ttsubo2000/gophercloud"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud/testhelper/client"
 )
 
 // WebhookListBody contains the canned body of a webhooks.List response.
@@ -21,11 +21,11 @@ const WebhookListBody = `
       "name": "first hook",
       "links": [
         {
-          "href": "https://dfw.autoscale.api.rackspacecloud.com/v1.0/123456/groups/60b15dad-5ea1-43fa-9a12-a1d737b4da07/policies/2b48d247-0282-4b9d-8775-5c4b67e8e649/webhooks/2bd1822c-58c5-49fd-8b3d-ed44781a58d1/",
+          "href": "https://dfw.autoscale.api.ttsubo2000cloud.com/v1.0/123456/groups/60b15dad-5ea1-43fa-9a12-a1d737b4da07/policies/2b48d247-0282-4b9d-8775-5c4b67e8e649/webhooks/2bd1822c-58c5-49fd-8b3d-ed44781a58d1/",
           "rel": "self"
         },
         {
-          "href": "https://dfw.autoscale.api.rackspacecloud.com/v1.0/execute/1/714c1c17c5e6ea5ef1e710d5ccc62e492575bab5216184d4c27dc0164db1bc06/",
+          "href": "https://dfw.autoscale.api.ttsubo2000cloud.com/v1.0/execute/1/714c1c17c5e6ea5ef1e710d5ccc62e492575bab5216184d4c27dc0164db1bc06/",
           "rel": "capability"
         }
       ],
@@ -36,11 +36,11 @@ const WebhookListBody = `
       "name": "second hook",
       "links": [
         {
-          "href": "https://dfw.autoscale.api.rackspacecloud.com/v1.0/123456/groups/60b15dad-5ea1-43fa-9a12-a1d737b4da07/policies/2b48d247-0282-4b9d-8775-5c4b67e8e649/webhooks/76711c36-dfbe-4f5e-bea6-cded99690515/",
+          "href": "https://dfw.autoscale.api.ttsubo2000cloud.com/v1.0/123456/groups/60b15dad-5ea1-43fa-9a12-a1d737b4da07/policies/2b48d247-0282-4b9d-8775-5c4b67e8e649/webhooks/76711c36-dfbe-4f5e-bea6-cded99690515/",
           "rel": "self"
         },
         {
-          "href": "https://dfw.autoscale.api.rackspacecloud.com/v1.0/execute/1/982e24858723f9e8bc2afea42a73a3c357c8f518857735400a7f7d8b3f14ccdb/",
+          "href": "https://dfw.autoscale.api.ttsubo2000cloud.com/v1.0/execute/1/982e24858723f9e8bc2afea42a73a3c357c8f518857735400a7f7d8b3f14ccdb/",
           "rel": "capability"
         }
       ],
@@ -79,11 +79,11 @@ const WebhookGetBody = `
     "name": "first hook",
     "links": [
       {
-        "href": "https://dfw.autoscale.api.rackspacecloud.com/v1.0/123456/groups/60b15dad-5ea1-43fa-9a12-a1d737b4da07/policies/2b48d247-0282-4b9d-8775-5c4b67e8e649/webhooks/2bd1822c-58c5-49fd-8b3d-ed44781a58d1/",
+        "href": "https://dfw.autoscale.api.ttsubo2000cloud.com/v1.0/123456/groups/60b15dad-5ea1-43fa-9a12-a1d737b4da07/policies/2b48d247-0282-4b9d-8775-5c4b67e8e649/webhooks/2bd1822c-58c5-49fd-8b3d-ed44781a58d1/",
         "rel": "self"
       },
       {
-        "href": "https://dfw.autoscale.api.rackspacecloud.com/v1.0/execute/1/714c1c17c5e6ea5ef1e710d5ccc62e492575bab5216184d4c27dc0164db1bc06/",
+        "href": "https://dfw.autoscale.api.ttsubo2000cloud.com/v1.0/execute/1/714c1c17c5e6ea5ef1e710d5ccc62e492575bab5216184d4c27dc0164db1bc06/",
         "rel": "capability"
       }
     ],
@@ -109,11 +109,11 @@ var (
 		Name: "first hook",
 		Links: []gophercloud.Link{
 			{
-				Href: "https://dfw.autoscale.api.rackspacecloud.com/v1.0/123456/groups/60b15dad-5ea1-43fa-9a12-a1d737b4da07/policies/2b48d247-0282-4b9d-8775-5c4b67e8e649/webhooks/2bd1822c-58c5-49fd-8b3d-ed44781a58d1/",
+				Href: "https://dfw.autoscale.api.ttsubo2000cloud.com/v1.0/123456/groups/60b15dad-5ea1-43fa-9a12-a1d737b4da07/policies/2b48d247-0282-4b9d-8775-5c4b67e8e649/webhooks/2bd1822c-58c5-49fd-8b3d-ed44781a58d1/",
 				Rel:  "self",
 			},
 			{
-				Href: "https://dfw.autoscale.api.rackspacecloud.com/v1.0/execute/1/714c1c17c5e6ea5ef1e710d5ccc62e492575bab5216184d4c27dc0164db1bc06/",
+				Href: "https://dfw.autoscale.api.ttsubo2000cloud.com/v1.0/execute/1/714c1c17c5e6ea5ef1e710d5ccc62e492575bab5216184d4c27dc0164db1bc06/",
 				Rel:  "capability",
 			},
 		},
@@ -126,11 +126,11 @@ var (
 		Name: "second hook",
 		Links: []gophercloud.Link{
 			{
-				Href: "https://dfw.autoscale.api.rackspacecloud.com/v1.0/123456/groups/60b15dad-5ea1-43fa-9a12-a1d737b4da07/policies/2b48d247-0282-4b9d-8775-5c4b67e8e649/webhooks/76711c36-dfbe-4f5e-bea6-cded99690515/",
+				Href: "https://dfw.autoscale.api.ttsubo2000cloud.com/v1.0/123456/groups/60b15dad-5ea1-43fa-9a12-a1d737b4da07/policies/2b48d247-0282-4b9d-8775-5c4b67e8e649/webhooks/76711c36-dfbe-4f5e-bea6-cded99690515/",
 				Rel:  "self",
 			},
 			{
-				Href: "https://dfw.autoscale.api.rackspacecloud.com/v1.0/execute/1/982e24858723f9e8bc2afea42a73a3c357c8f518857735400a7f7d8b3f14ccdb/",
+				Href: "https://dfw.autoscale.api.ttsubo2000cloud.com/v1.0/execute/1/982e24858723f9e8bc2afea42a73a3c357c8f518857735400a7f7d8b3f14ccdb/",
 				Rel:  "capability",
 			},
 		},

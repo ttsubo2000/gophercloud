@@ -1,21 +1,21 @@
 // +build acceptance
 
-package rackspace
+package ttsubo2000
 
 import (
 	"testing"
 
-	"github.com/rackspace/gophercloud/acceptance/tools"
-	"github.com/rackspace/gophercloud/rackspace"
-	th "github.com/rackspace/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud/acceptance/tools"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
 )
 
 func TestAuthenticatedClient(t *testing.T) {
 	// Obtain credentials from the environment.
-	ao, err := rackspace.AuthOptionsFromEnv()
+	ao, err := ttsubo2000.AuthOptionsFromEnv()
 	th.AssertNoErr(t, err)
 
-	client, err := rackspace.AuthenticatedClient(tools.OnlyRS(ao))
+	client, err := ttsubo2000.AuthenticatedClient(tools.OnlyRS(ao))
 	if err != nil {
 		t.Fatalf("Unable to authenticate: %v", err)
 	}

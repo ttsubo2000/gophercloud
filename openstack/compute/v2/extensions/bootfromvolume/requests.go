@@ -4,8 +4,8 @@ import (
 	"errors"
 	"strconv"
 
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/openstack/compute/v2/servers"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/openstack/compute/v2/servers"
 )
 
 // SourceType represents the type of medium being used to create the volume.

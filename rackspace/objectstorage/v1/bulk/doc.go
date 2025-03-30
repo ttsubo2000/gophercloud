@@ -1,3 +1,3 @@
 // Package bulk provides functionality for working with bulk operations in the
-// Rackspace Cloud Files service.
+// ttsubo2000 Cloud Files service.
 package bulk

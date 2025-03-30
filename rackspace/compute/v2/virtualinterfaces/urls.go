@@ -1,6 +1,6 @@
 package virtualinterfaces
 
-import "github.com/rackspace/gophercloud"
+import "github.com/ttsubo2000/gophercloud"
 
 func listURL(c *gophercloud.ServiceClient, instanceID string) string {
 	return c.ServiceURL("servers", instanceID, "os-virtual-interfacesv2")

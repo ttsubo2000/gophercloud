@@ -3,8 +3,8 @@ package bootfromvolume
 import (
 	"testing"
 
-	"github.com/rackspace/gophercloud/openstack/compute/v2/servers"
-	th "github.com/rackspace/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud/openstack/compute/v2/servers"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
 )
 
 func TestCreateOpts(t *testing.T) {

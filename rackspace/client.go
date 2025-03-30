@@ -1,44 +1,44 @@
-package rackspace
+package ttsubo2000
 
 import (
 	"fmt"
 
-	"github.com/rackspace/gophercloud"
-	os "github.com/rackspace/gophercloud/openstack"
-	"github.com/rackspace/gophercloud/openstack/utils"
-	tokens2 "github.com/rackspace/gophercloud/rackspace/identity/v2/tokens"
+	"github.com/ttsubo2000/gophercloud"
+	os "github.com/ttsubo2000/gophercloud/openstack"
+	"github.com/ttsubo2000/gophercloud/openstack/utils"
+	tokens2 "github.com/ttsubo2000/gophercloud/ttsubo2000/identity/v2/tokens"
 )
 
 const (
-	// RackspaceUSIdentity is an identity endpoint located in the United States.
-	RackspaceUSIdentity = "https://identity.api.rackspacecloud.com/v2.0/"
+	// ttsubo2000USIdentity is an identity endpoint located in the United States.
+	ttsubo2000USIdentity = "https://identity.api.ttsubo2000cloud.com/v2.0/"
 
-	// RackspaceUKIdentity is an identity endpoint located in the UK.
-	RackspaceUKIdentity = "https://lon.identity.api.rackspacecloud.com/v2.0/"
+	// ttsubo2000UKIdentity is an identity endpoint located in the UK.
+	ttsubo2000UKIdentity = "https://lon.identity.api.ttsubo2000cloud.com/v2.0/"
 )
 
 const (
 	v20 = "v2.0"
 )
 
-// NewClient creates a client that's prepared to communicate with the Rackspace API, but is not
+// NewClient creates a client that's prepared to communicate with the ttsubo2000 API, but is not
 // yet authenticated. Most users will probably prefer using the AuthenticatedClient function
 // instead.
 //
 // Provide the base URL of the identity endpoint you wish to authenticate against as "endpoint".
-// Often, this will be either RackspaceUSIdentity or RackspaceUKIdentity.
+// Often, this will be either ttsubo2000USIdentity or ttsubo2000UKIdentity.
 func NewClient(endpoint string) (*gophercloud.ProviderClient, error) {
 	if endpoint == "" {
-		return os.NewClient(RackspaceUSIdentity)
+		return os.NewClient(ttsubo2000USIdentity)
 	}
 	return os.NewClient(endpoint)
 }
 
-// AuthenticatedClient logs in to Rackspace with the provided credentials and constructs a
+// AuthenticatedClient logs in to ttsubo2000 with the provided credentials and constructs a
 // ProviderClient that's ready to operate.
 //
 // If the provided AuthOptions does not specify an explicit IdentityEndpoint, it will default to
-// the canonical, production Rackspace US identity endpoint.
+// the canonical, production ttsubo2000 US identity endpoint.
 func AuthenticatedClient(options gophercloud.AuthOptions) (*gophercloud.ProviderClient, error) {
 	client, err := NewClient(options.IdentityEndpoint)
 	if err != nil {
@@ -133,7 +133,7 @@ func NewComputeV2(client *gophercloud.ProviderClient, eo gophercloud.EndpointOpt
 	}, nil
 }
 
-// NewObjectCDNV1 creates a ServiceClient that may be used with the Rackspace v1 CDN.
+// NewObjectCDNV1 creates a ServiceClient that may be used with the ttsubo2000 v1 CDN.
 func NewObjectCDNV1(client *gophercloud.ProviderClient, eo gophercloud.EndpointOpts) (*gophercloud.ServiceClient, error) {
 	eo.ApplyDefaults("rax:object-cdn")
 	url, err := client.EndpointLocator(eo)
@@ -143,13 +143,13 @@ func NewObjectCDNV1(client *gophercloud.ProviderClient, eo gophercloud.EndpointO
 	return &gophercloud.ServiceClient{ProviderClient: client, Endpoint: url}, nil
 }
 
-// NewObjectStorageV1 creates a ServiceClient that may be used with the Rackspace v1 object storage package.
+// NewObjectStorageV1 creates a ServiceClient that may be used with the ttsubo2000 v1 object storage package.
 func NewObjectStorageV1(client *gophercloud.ProviderClient, eo gophercloud.EndpointOpts) (*gophercloud.ServiceClient, error) {
 	return os.NewObjectStorageV1(client, eo)
 }
 
 // NewBlockStorageV1 creates a ServiceClient that can be used to access the
-// Rackspace Cloud Block Storage v1 API.
+// ttsubo2000 Cloud Block Storage v1 API.
 func NewBlockStorageV1(client *gophercloud.ProviderClient, eo gophercloud.EndpointOpts) (*gophercloud.ServiceClient, error) {
 	eo.ApplyDefaults("volume")
 	url, err := client.EndpointLocator(eo)
@@ -160,7 +160,7 @@ func NewBlockStorageV1(client *gophercloud.ProviderClient, eo gophercloud.Endpoi
 	return &gophercloud.ServiceClient{ProviderClient: client, Endpoint: url}, nil
 }
 
-// NewLBV1 creates a ServiceClient that can be used to access the Rackspace
+// NewLBV1 creates a ServiceClient that can be used to access the ttsubo2000
 // Cloud Load Balancer v1 API.
 func NewLBV1(client *gophercloud.ProviderClient, eo gophercloud.EndpointOpts) (*gophercloud.ServiceClient, error) {
 	eo.ApplyDefaults("rax:load-balancer")
@@ -171,7 +171,7 @@ func NewLBV1(client *gophercloud.ProviderClient, eo gophercloud.EndpointOpts) (*
 	return &gophercloud.ServiceClient{ProviderClient: client, Endpoint: url}, nil
 }
 
-// NewNetworkV2 creates a ServiceClient that can be used to access the Rackspace
+// NewNetworkV2 creates a ServiceClient that can be used to access the ttsubo2000
 // Networking v2 API.
 func NewNetworkV2(client *gophercloud.ProviderClient, eo gophercloud.EndpointOpts) (*gophercloud.ServiceClient, error) {
 	eo.ApplyDefaults("network")
@@ -182,7 +182,7 @@ func NewNetworkV2(client *gophercloud.ProviderClient, eo gophercloud.EndpointOpt
 	return &gophercloud.ServiceClient{ProviderClient: client, Endpoint: url}, nil
 }
 
-// NewCDNV1 creates a ServiceClient that may be used to access the Rackspace v1
+// NewCDNV1 creates a ServiceClient that may be used to access the ttsubo2000 v1
 // CDN service.
 func NewCDNV1(client *gophercloud.ProviderClient, eo gophercloud.EndpointOpts) (*gophercloud.ServiceClient, error) {
 	eo.ApplyDefaults("rax:cdn")

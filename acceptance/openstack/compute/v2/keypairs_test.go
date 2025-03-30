@@ -7,10 +7,10 @@ import (
 	"crypto/rsa"
 	"testing"
 
-	"github.com/rackspace/gophercloud/acceptance/tools"
-	"github.com/rackspace/gophercloud/openstack/compute/v2/extensions/keypairs"
-	"github.com/rackspace/gophercloud/openstack/compute/v2/servers"
-	th "github.com/rackspace/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud/acceptance/tools"
+	"github.com/ttsubo2000/gophercloud/openstack/compute/v2/extensions/keypairs"
+	"github.com/ttsubo2000/gophercloud/openstack/compute/v2/servers"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
 
 	"golang.org/x/crypto/ssh"
 )

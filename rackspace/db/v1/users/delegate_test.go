@@ -3,10 +3,10 @@ package users
 import (
 	"testing"
 
-	db "github.com/rackspace/gophercloud/openstack/db/v1/databases"
-	os "github.com/rackspace/gophercloud/openstack/db/v1/users"
-	th "github.com/rackspace/gophercloud/testhelper"
-	fake "github.com/rackspace/gophercloud/testhelper/client"
+	db "github.com/ttsubo2000/gophercloud/openstack/db/v1/databases"
+	os "github.com/ttsubo2000/gophercloud/openstack/db/v1/users"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
+	fake "github.com/ttsubo2000/gophercloud/testhelper/client"
 )
 
 const instanceID = "{instanceID}"

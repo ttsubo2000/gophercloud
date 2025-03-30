@@ -5,12 +5,12 @@ package v2
 import (
 	"testing"
 
-	"github.com/rackspace/gophercloud"
-	os "github.com/rackspace/gophercloud/openstack/identity/v2/extensions/admin/roles"
+	"github.com/ttsubo2000/gophercloud"
+	os "github.com/ttsubo2000/gophercloud/openstack/identity/v2/extensions/admin/roles"
 
-	"github.com/rackspace/gophercloud/pagination"
-	"github.com/rackspace/gophercloud/rackspace/identity/v2/roles"
-	th "github.com/rackspace/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud/pagination"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/identity/v2/roles"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
 )
 
 func TestRoles(t *testing.T) {

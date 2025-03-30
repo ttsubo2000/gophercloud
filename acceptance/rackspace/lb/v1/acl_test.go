@@ -5,11 +5,11 @@ package v1
 import (
 	"testing"
 
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/pagination"
-	"github.com/rackspace/gophercloud/rackspace/lb/v1/acl"
-	"github.com/rackspace/gophercloud/rackspace/lb/v1/lbs"
-	th "github.com/rackspace/gophercloud/testhelper"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/pagination"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/lb/v1/acl"
+	"github.com/ttsubo2000/gophercloud/ttsubo2000/lb/v1/lbs"
+	th "github.com/ttsubo2000/gophercloud/testhelper"
 )
 
 func TestACL(t *testing.T) {

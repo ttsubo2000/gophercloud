@@ -7,10 +7,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rackspace/gophercloud"
-	"github.com/rackspace/gophercloud/openstack/db/v1/datastores"
-	"github.com/rackspace/gophercloud/openstack/db/v1/flavors"
-	"github.com/rackspace/gophercloud/testhelper/fixture"
+	"github.com/ttsubo2000/gophercloud"
+	"github.com/ttsubo2000/gophercloud/openstack/db/v1/datastores"
+	"github.com/ttsubo2000/gophercloud/openstack/db/v1/flavors"
+	"github.com/ttsubo2000/gophercloud/testhelper/fixture"
 )
 
 var (
